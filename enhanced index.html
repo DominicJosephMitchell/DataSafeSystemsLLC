@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Data Safe Systems LLC - One Stop For All Your IT Needs. Professional IT support, network security, computer services, cloud solutions, virtualization, and technology training.">
+
+    <meta name="author" content="Data Safe Systems LLC">
+
+    <title>Data Safe Systems LLC | One Stop For All Your IT Needs</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP 5.2.3
+    ====================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <!-- =====================================================
+         YOUR EXISTING CSS
+    ====================================================== -->
+
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <!-- =====================================================
+         DATA SAFE SYSTEMS CUSTOM STYLING
+    ====================================================== -->
+
+    <style>
+        /* =====================================================
+           COLORS
+        ====================================================== */
+
+        :root {
+
+            --burgundy: #800020;
+            --burgundy-dark: #5c0018;
+            --burgundy-light: #a52a45;
+
+            --navy: #071a2d;
+            --navy-light: #0d2d4b;
+
+            --light-bg: #f8f5f6;
+
+            --text-dark: #172033;
+            --text-gray: #5f6b7a;
+
+            --white: #ffffff;
+
+        }
+
+
+        /* =====================================================
+           GENERAL
+        ====================================================== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            margin: 0;
+
+            font-family: "Raleway", Arial, sans-serif;
+
+            color: var(--text-dark);
+
+            background: #ffffff;
+
+        }
+
+
+        /* =====================================================
+           HEADER
+        ====================================================== */
+
+        .dss-header {
+
+            background: var(--navy);
+
+            padding: 45px 20px 50px;
+
+            text-align: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .dss-header::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(165, 42, 69, 0.20);
+
+            right: -180px;
+            top: -200px;
+
+        }
+
+        .dss-header::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(165, 42, 69, 0.12);
+
+            left: -160px;
+            bottom: -180px;
+
+        }
+
+        .header-content {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+        .header-upper {
+
+            display: block;
+
+            color: #d9a1af;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 8px;
+
+        }
+
+        .header-lower {
+
+            display: block;
+
+            color: #ffffff;
+
+            font-size: 42px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+        }
+
+        .header-tagline {
+
+            color: #d9e0e8;
+
+            font-size: 16px;
+
+            margin-top: 12px;
+
+        }
+
+
+        /* =====================================================
+           NAVIGATION
+        ====================================================== */
+
+        #mainNav {
+
+            background: #ffffff !important;
+
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.10);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1030;
+
+            padding: 8px 0;
+
+        }
+
+        #mainNav .container {
+
+            min-height: 82px;
+
+        }
+
+
+        /* =====================================================
+           LOGO - ICON.JPG
+        ====================================================== */
+
+        #mainNav .navbar-brand {
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            justify-content: flex-start !important;
+
+            padding: 0 !important;
+
+            margin: 0 !important;
+
+            text-decoration: none !important;
+
+            flex-shrink: 0;
+
+        }
+
+
+        #mainNav .dss-logo {
+
+            display: block !important;
+
+            width: 200px !important;
+
+            height: auto !important;
+
+            max-width: 200px !important;
+
+            min-width: 200px !important;
+
+            object-fit: contain !important;
+
+            visibility: visible !important;
+
+            opacity: 1 !important;
+
+        }
+
+
+        /* =====================================================
+           NAVIGATION LINKS
+        ====================================================== */
+
+        #mainNav .navbar-nav {
+
+            align-items: center;
+
+        }
+
+        #mainNav .nav-link {
+
+            color: #1a1a1a !important;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.6px;
+
+            padding: 12px 18px !important;
+
+            position: relative;
+
+            transition: all 0.25s ease;
+
+        }
+
+        #mainNav .nav-link:hover {
+
+            color: var(--burgundy) !important;
+
+        }
+
+        #mainNav .nav-link.active {
+
+            color: var(--burgundy) !important;
+
+        }
+
+        #mainNav .nav-link.active::after {
+
+            content: "";
+
+            position: absolute;
+
+            height: 3px;
+
+            left: 18px;
+
+            right: 18px;
+
+            bottom: 3px;
+
+            background: var(--burgundy);
+
+            border-radius: 3px;
+
+        }
+
+
+        /* =====================================================
+           MOBILE NAVIGATION BUTTON
+        ====================================================== */
+
+        #mainNav .navbar-toggler {
+
+            border: 1px solid #cccccc !important;
+
+            padding: 8px 10px;
+
+        }
+
+        #mainNav .navbar-toggler:focus {
+
+            box-shadow:
+                0 0 0 3px rgba(128, 0, 32, 0.15) !important;
+
+        }
+
+        #mainNav .navbar-toggler-icon {
+
+            width: 1.5em;
+
+            height: 1.5em;
+
+        }
+
+
+        /* =====================================================
+           SUPPORT BUTTON
+        ====================================================== */
+
+        #mainNav .nav-support {
+
+            background: var(--burgundy);
+
+            color: #ffffff !important;
+
+            border-radius: 6px;
+
+            margin-left: 8px;
+
+            padding: 11px 20px !important;
+
+        }
+
+        #mainNav .nav-support:hover {
+
+            background: var(--burgundy-dark);
+
+            color: #ffffff !important;
+
+        }
+
+        #mainNav .nav-support::after {
+
+            display: none;
+
+        }
+
+
+        /* =====================================================
+           HERO SECTION
+        ====================================================== */
+
+        .hero-section {
+
+            position: relative;
+
+            min-height: 590px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(5, 20, 35, 0.96) 0%,
+                    rgba(5, 20, 35, 0.88) 45%,
+                    rgba(5, 20, 35, 0.55) 100%),
+                url("assets/img/intro.jpg") center center / cover no-repeat;
+
+        }
+
+        .hero-content {
+
+            max-width: 700px;
+
+            padding: 80px 0;
+
+            color: #ffffff;
+
+        }
+
+        .hero-kicker {
+
+            color: #d9a1af;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+
+        }
+
+        .hero-title {
+
+            font-size: 58px;
+
+            line-height: 1.08;
+
+            font-weight: 900;
+
+            margin-bottom: 25px;
+
+        }
+
+        .hero-title span {
+
+            color: var(--burgundy-light);
+
+        }
+
+        .hero-text {
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: rgba(255, 255, 255, 0.90);
+
+            max-width: 630px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .hero-buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ====================================================== */
+
+        .btn-dss {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            border: 2px solid var(--burgundy);
+
+            border-radius: 6px;
+
+            padding: 13px 25px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+
+        }
+
+        .btn-dss:hover {
+
+            background: var(--burgundy-dark);
+
+            border-color: var(--burgundy-dark);
+
+            color: #ffffff;
+
+            transform: translateY(-2px);
+
+        }
+
+        .btn-dss-outline {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: transparent;
+
+            color: #ffffff;
+
+            border: 2px solid #ffffff;
+
+            border-radius: 6px;
+
+            padding: 13px 25px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+
+        }
+
+        .btn-dss-outline:hover {
+
+            background: #ffffff;
+
+            color: var(--navy);
+
+        }
+
+
+        /* =====================================================
+           HERO FEATURES
+        ====================================================== */
+
+        .hero-features {
+
+            margin-top: -50px;
+
+            position: relative;
+
+            z-index: 5;
+
+        }
+
+        .hero-features-box {
+
+            background: #ffffff;
+
+            border-radius: 12px;
+
+            padding: 25px 10px;
+
+            box-shadow:
+                0 12px 35px rgba(0, 0, 0, 0.13);
+
+        }
+
+        .hero-feature {
+
+            text-align: center;
+
+            padding: 10px 20px;
+
+            border-right: 1px solid #e3e3e3;
+
+        }
+
+        .hero-feature:last-child {
+
+            border-right: none;
+
+        }
+
+        .hero-feature-icon {
+
+            width: 52px;
+
+            height: 52px;
+
+            margin: 0 auto 12px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #f5e8ec;
+
+            color: var(--burgundy);
+
+            font-size: 25px;
+
+        }
+
+        .hero-feature h5 {
+
+            font-size: 16px;
+
+            font-weight: 800;
+
+            margin-bottom: 5px;
+
+        }
+
+        .hero-feature p {
+
+            color: var(--text-gray);
+
+            font-size: 13px;
+
+            margin: 0;
+
+        }
+
+
+        /* =====================================================
+           GENERAL SECTIONS
+        ====================================================== */
+
+        .dss-section {
+
+            padding: 90px 0;
+
+        }
+
+        .section-kicker {
+
+            color: var(--burgundy);
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+
+        }
+
+        .section-title {
+
+            color: var(--navy);
+
+            font-size: 45px;
+
+            line-height: 1.15;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+
+        }
+
+        .section-title span {
+
+            color: var(--burgundy);
+
+        }
+
+        .section-text {
+
+            color: var(--text-gray);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           ABOUT
+        ====================================================== */
+
+        .about-section {
+
+            background: #ffffff;
+
+        }
+
+        .about-image {
+
+            width: 100%;
+
+            height: 430px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+
+        }
+
+        .check-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 25px 0;
+
+        }
+
+        .check-list li {
+
+            color: #26364a;
+
+            font-weight: 600;
+
+            margin-bottom: 14px;
+
+        }
+
+        .check-list i {
+
+            color: var(--burgundy);
+
+            margin-right: 10px;
+
+        }
+
+
+        /* =====================================================
+           SERVICES
+        ====================================================== */
+
+        .services-section {
+
+            background: var(--light-bg);
+
+        }
+
+        .service-card {
+
+            height: 100%;
+
+            background: #ffffff;
+
+            border: 1px solid #e4e5e7;
+
+            border-radius: 12px;
+
+            padding: 32px 25px;
+
+            text-align: center;
+
+            box-shadow:
+                0 4px 15px rgba(0, 0, 0, 0.04);
+
+            transition: all 0.3s ease;
+
+        }
+
+        .service-card:hover {
+
+            transform: translateY(-6px);
+
+            border-color: #d3aab5;
+
+            box-shadow:
+                0 15px 30px rgba(92, 0, 24, 0.12);
+
+        }
+
+        .service-icon {
+
+            width: 65px;
+
+            height: 65px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            font-size: 27px;
+
+        }
+
+        .service-card h4 {
+
+            color: var(--navy);
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            margin-bottom: 12px;
+
+        }
+
+        .service-card p {
+
+            color: var(--text-gray);
+
+            line-height: 1.7;
+
+            margin-bottom: 0;
+
+        }
+
+
+        /* =====================================================
+           PROMISE
+        ====================================================== */
+
+        .promise-section {
+
+            background:
+                linear-gradient(135deg,
+                    #06182b 0%,
+                    #2f0c17 100%);
+
+            color: #ffffff;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        .promise-card {
+
+            height: 100%;
+
+            padding: 40px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.15);
+
+            border-radius: 12px;
+
+        }
+
+        .promise-card h2 {
+
+            font-size: 34px;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+
+        }
+
+        .promise-card p {
+
+            color: rgba(255, 255, 255, 0.85);
+
+            line-height: 1.8;
+
+        }
+
+        .promise-highlight {
+
+            color: #d9a1af;
+
+            font-weight: 800;
+
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ====================================================== */
+
+        .contact-card {
+
+            height: 100%;
+
+            padding: 40px;
+
+            background: #ffffff;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.16);
+
+        }
+
+        .contact-card h3 {
+
+            color: var(--navy);
+
+            font-size: 28px;
+
+            font-weight: 900;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        /* =====================================================
+           CHAMBER
+        ====================================================== */
+
+        .chamber-section {
+
+            padding: 55px 0;
+
+            background: #ffffff;
+
+            text-align: center;
+
+        }
+
+        .chamber-logo {
+
+            width: 220px;
+
+            max-width: 100%;
+
+            height: auto;
+
+            margin-bottom: 15px;
+
+        }
+
+        .chamber-section p {
+
+            color: var(--text-gray);
+
+            margin-bottom: 0;
+
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        .footer {
+
+            background: #031321;
+
+            color: #ffffff;
+
+            padding: 55px 0 25px;
+
+        }
+
+
+        /* =====================================================
+           FOOTER LOGO - ICON.JPG
+        ====================================================== */
+
+        .footer-logo {
+
+            width: 200px !important;
+
+            height: auto !important;
+
+            max-width: 100% !important;
+
+            display: block !important;
+
+            margin-bottom: 18px;
+
+            object-fit: contain !important;
+
+        }
+
+
+        .footer p {
+
+            color: #aebdcc;
+
+            line-height: 1.7;
+
+        }
+
+        .footer h5 {
+
+            color: #ffffff;
+
+            font-size: 17px;
+
+            font-weight: 800;
+
+            margin-bottom: 20px;
+
+        }
+
+        .footer-links {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 0;
+
+        }
+
+        .footer-links li {
+
+            margin-bottom: 10px;
+
+        }
+
+        .footer-links a {
+
+            color: #aebdcc;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+
+        }
+
+        .footer-links a:hover {
+
+            color: #d9a1af;
+
+            padding-left: 4px;
+
+        }
+
+        .footer-divider {
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.10);
+
+            margin: 35px 0 20px;
+
+        }
+
+        .copyright {
+
+            color: #8494a6;
+
+            font-size: 13px;
+
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ====================================================== */
+
+        #backToTop {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 48px;
+
+            height: 48px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 8px 20px rgba(92, 0, 24, 0.30);
+
+            transition: all 0.25s ease;
+
+        }
+
+        #backToTop:hover {
+
+            background: var(--burgundy-dark);
+
+            transform: translateY(-3px);
+
+        }
+
+
+        /* =====================================================
+           TABLET
+        ====================================================== */
+
+        @media (max-width: 991px) {
+
+            .dss-header {
+
+                padding: 35px 20px;
+
+            }
+
+            .header-lower {
+
+                font-size: 34px;
+
+            }
+
+            #mainNav .navbar-nav {
+
+                align-items: flex-start;
+
+                padding-top: 15px;
+
+                width: 100%;
+
+            }
+
+            #mainNav .nav-link {
+
+                padding: 10px !important;
+
+            }
+
+            #mainNav .nav-support {
+
+                margin-left: 0;
+
+                margin-top: 8px;
+
+                display: inline-flex;
+
+            }
+
+            .hero-section {
+
+                min-height: 540px;
+
+            }
+
+            .hero-content {
+
+                padding: 70px 20px;
+
+            }
+
+            .hero-title {
+
+                font-size: 48px;
+
+            }
+
+            .hero-features {
+
+                margin-top: 30px;
+
+            }
+
+            .hero-feature {
+
+                border-right: none;
+
+                border-bottom:
+                    1px solid #e3e3e3;
+
+                padding: 20px;
+
+            }
+
+            .hero-feature:last-child {
+
+                border-bottom: none;
+
+            }
+
+            .dss-section {
+
+                padding: 70px 0;
+
+            }
+
+            .about-image {
+
+                height: 350px;
+
+                margin-bottom: 20px;
+
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 576px) {
+
+            .dss-header {
+
+                padding: 30px 15px;
+
+            }
+
+            .header-upper {
+
+                font-size: 11px;
+
+                letter-spacing: 2px;
+
+            }
+
+            .header-lower {
+
+                font-size: 28px;
+
+            }
+
+            .header-tagline {
+
+                font-size: 13px;
+
+            }
+
+
+            /* MOBILE LOGO */
+
+            #mainNav .dss-logo {
+
+                width: 170px !important;
+
+                min-width: 170px !important;
+
+                max-width: 170px !important;
+
+                height: auto !important;
+
+            }
+
+
+            #mainNav .container {
+
+                min-height: 70px;
+
+            }
+
+
+            /* MOBILE FOOTER LOGO */
+
+            .footer-logo {
+
+                width: 170px !important;
+
+            }
+
+
+            .hero-section {
+
+                min-height: 580px;
+
+            }
+
+            .hero-content {
+
+                padding: 60px 20px;
+
+            }
+
+            .hero-title {
+
+                font-size: 39px;
+
+            }
+
+            .hero-text {
+
+                font-size: 16px;
+
+            }
+
+            .hero-buttons {
+
+                flex-direction: column;
+
+                width: 100%;
+
+            }
+
+            .btn-dss,
+            .btn-dss-outline {
+
+                width: 100%;
+
+            }
+
+            .section-title {
+
+                font-size: 34px;
+
+            }
+
+            .about-image {
+
+                height: 280px;
+
+            }
+
+            .promise-card,
+            .contact-card {
+
+                padding: 30px;
+
+            }
+
+            #backToTop {
+
+                right: 15px;
+
+                bottom: 15px;
+
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         WEBSITE HEADER
+    ====================================================== -->
+
+    <header class="dss-header">
+
+        <div class="header-content">
+
+            <div class="header-upper">
+                One Stop For All Your IT Needs
+            </div>
+
+            <div class="header-lower">
+                Data Safe Systems LLC
+            </div>
+
+            <div class="header-tagline">
+                Professional IT Support • Security • Technology Solutions
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+
+        <div class="container">
+
+
+            <!-- =================================================
+                 DATA SAFE SYSTEMS LOGO
+
+                 FILE:
+                 assets/img/ICON.JPG
+            ================================================== -->
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="./assets/img/ICON.JPG" alt="Data Safe Systems LLC" class="dss-logo" loading="eager">
+
+            </a>
+
+
+            <!-- MOBILE MENU -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="index.html">
+
+                            HOME
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="about.html">
+
+                            ABOUT
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="products.html">
+
+                            SERVICES
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="store.html">
+
+                            CONTACT
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link nav-support" href="store.html">
+
+                            GET SUPPORT
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section class="hero-section">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="hero-kicker">
+                    Information Technology
+                </div>
+
+                <h1 class="hero-title">
+
+                    Innovative IT Solutions.
+
+                    <br>
+
+                    <span>Secure Your Future.</span>
+
+                </h1>
+
+                <p class="hero-text">
+
+                    Innovate today with cutting-edge IT services.
+                    Unlock your potential with our IT expertise.
+                    Secure your data, secure your future.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="products.html" class="btn-dss">
+
+                        IT Made Simple!
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                    <a href="store.html" class="btn-dss-outline">
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FEATURE BAR
+    ====================================================== -->
+
+    <section class="hero-features">
+
+        <div class="container">
+
+            <div class="hero-features-box">
+
+                <div class="row g-0">
+
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="hero-feature">
+
+                            <div class="hero-feature-icon">
+
+                                <i class="bi bi-shield-check"></i>
+
+                            </div>
+
+                            <h5>
+                                Security First
+                            </h5>
+
+                            <p>
+                                Protecting what matters most
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="hero-feature">
+
+                            <div class="hero-feature-icon">
+
+                                <i class="bi bi-lightbulb"></i>
+
+                            </div>
+
+                            <h5>
+                                Innovative Solutions
+                            </h5>
+
+                            <p>
+                                Technology built around your needs
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="hero-feature">
+
+                            <div class="hero-feature-icon">
+
+                                <i class="bi bi-headset"></i>
+
+                            </div>
+
+                            <h5>
+                                Reliable Support
+                            </h5>
+
+                            <p>
+                                Help when you need it
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6">
+
+                        <div class="hero-feature">
+
+                            <div class="hero-feature-icon">
+
+                                <i class="bi bi-people"></i>
+
+                            </div>
+
+                            <h5>
+                                Trusted Partner
+                            </h5>
+
+                            <p>
+                                Your success is our priority
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT / INTRO
+    ====================================================== -->
+
+    <section class="about-section dss-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <img src="./assets/img/intro.jpg" class="about-image" alt="Data Safe Systems IT services">
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="section-kicker">
+                        Information Technology
+                    </div>
+
+                    <h2 class="section-title">
+
+                        Crafting <span>Tomorrow</span>
+
+                    </h2>
+
+                    <p class="section-text">
+
+                        Technology is constantly evolving — and so are we.
+                        Data Safe Systems LLC provides practical, reliable,
+                        and innovative IT solutions designed around your
+                        technology needs.
+
+                    </p>
+
+
+                    <ul class="check-list">
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Cutting-edge technology and best practices
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Customized solutions for your business
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Security, reliability, and peace of mind
+
+                        </li>
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            Commercial and residential support
+
+                        </li>
+
+                    </ul>
+
+
+                    <a href="about.html" class="btn-dss">
+
+                        Learn More
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES
+    ====================================================== -->
+
+    <section class="services-section dss-section">
+
+        <div class="container">
+
+
+            <div class="text-center mb-5">
+
+                <div class="section-kicker">
+                    Our Services
+                </div>
+
+                <h2 class="section-title">
+
+                    Complete <span>IT Solutions</span>
+
+                </h2>
+
+                <p class="section-text mx-auto" style="max-width: 750px;">
+
+                    Enterprise-level service at a small business price —
+                    providing professional commercial and residential
+                    IT support.
+
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-pc-display"></i>
+
+                        </div>
+
+                        <h4>
+                            Computers & Devices
+                        </h4>
+
+                        <p>
+
+                            Towers, PCs, laptops, servers,
+                            hardware, software, and device setup.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-diagram-3"></i>
+
+                        </div>
+
+                        <h4>
+                            Networking
+                        </h4>
+
+                        <p>
+
+                            Routers, modems, firewalls,
+                            network installations, and troubleshooting.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-shield-lock"></i>
+
+                        </div>
+
+                        <h4>
+                            Network Security
+                        </h4>
+
+                        <p>
+
+                            Virus and malware protection,
+                            network security, firewalls,
+                            and security solutions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-cloud-check"></i>
+
+                        </div>
+
+                        <h4>
+                            Cloud & Virtualization
+                        </h4>
+
+                        <p>
+
+                            Migration, cloud solutions,
+                            Hyper-V, VMware, and virtualization.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-headset"></i>
+
+                        </div>
+
+                        <h4>
+                            IT Support
+                        </h4>
+
+                        <p>
+
+                            Break-fix services, device setup,
+                            hardware/software support,
+                            and third-party applications.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+
+                            <i class="bi bi-mortarboard"></i>
+
+                        </div>
+
+                        <h4>
+                            Education & Training
+                        </h4>
+
+                        <p>
+
+                            One-on-one or group technology training
+                            customized to your needs and skill level.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         OUR PROMISE
+    ====================================================== -->
+
+    <section class="promise-section dss-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-8">
+
+                    <div class="promise-card">
+
+                        <div class="section-kicker">
+                            Our Promise
+                        </div>
+
+                        <h2>
+                            Dedicated To Your Success
+                        </h2>
+
+                        <p>
+
+                            When we walk into your shop as you start
+                            your day, we are dedicated to providing
+                            you with friendly service, a welcoming
+                            atmosphere, and above all else, excellent
+                            service with the highest quality solutions.
+
+                        </p>
+
+                        <p class="mb-0">
+
+                            <span class="promise-highlight">
+                                Your Success Is Our Priority.
+                            </span>
+
+                            Partner with us for dependable IT support,
+                            innovation, and experience.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="contact-card d-flex flex-column justify-content-center">
+
+                        <div class="section-kicker">
+                            Get Started
+                        </div>
+
+                        <h3>
+                            Need IT Help?
+                        </h3>
+
+                        <p class="text-muted">
+
+                            Let Data Safe Systems LLC help you
+                            find the right technology solution.
+
+                        </p>
+
+                        <a href="store.html" class="btn-dss">
+
+                            Contact Us
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHAMBER OF COMMERCE
+    ====================================================== -->
+
+    <section class="chamber-section">
+
+        <div class="container">
+
+            <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce">
+
+            <p>
+
+                Proud member of the Greater East Pasco Chamber of Commerce
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-5">
+
+                    <!-- =================================================
+                         DATA SAFE SYSTEMS FOOTER LOGO
+                         FILE: assets/img/ICON.JPG
+                    ================================================== -->
+
+                    <img src="./assets/img/ICON.JPG" class="footer-logo" alt="Data Safe Systems LLC" loading="lazy">
+
+                    <p>
+
+                        Providing innovative IT solutions with a
+                        commitment to security, reliability,
+                        and exceptional customer service.
+
+                    </p>
+
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="store.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4">
+
+                    <h5>
+                        Our Services
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="products.html">
+                                Network Security
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                IT Support & Helpdesk
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                Cloud Solutions
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                Data Backup & Recovery
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                IT Consulting
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-divider"></div>
+
+
+            <div class="d-flex flex-column flex-md-row
+                       justify-content-between
+                       align-items-center
+                       gap-3">
+
+                <div class="copyright">
+
+                    Copyright &copy;
+
+                    <span id="currentYear"></span>
+
+                    Data Safe Systems LLC.
+
+                    All Rights Reserved.
+
+                </div>
+
+                <div class="copyright">
+
+                    One Stop For All Your IT Needs
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button id="backToTop" type="button" aria-label="Return to top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+    ====================================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- =====================================================
+         YOUR EXISTING JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/scripts.js"></script>
+
+
+    <!-- =====================================================
+         PAGE JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* =====================================================
+           AUTOMATIC COPYRIGHT YEAR
+        ====================================================== */
+
+        const currentYear =
+            document.getElementById("currentYear");
+
+        if (currentYear) {
+
+            currentYear.textContent =
+                new Date().getFullYear();
+
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ====================================================== */
+
+        const backToTop =
+            document.getElementById("backToTop");
+
+
+        if (backToTop) {
+
+            window.addEventListener("scroll", function () {
+
+                if (window.scrollY > 300) {
+
+                    backToTop.style.display = "flex";
+
+                } else {
+
+                    backToTop.style.display = "none";
+
+                }
+
+            });
+
+
+            backToTop.addEventListener("click", function () {
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: "smooth"
+
+                });
+
+            });
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
