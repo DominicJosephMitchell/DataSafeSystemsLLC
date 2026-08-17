@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,38 +17,18 @@
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-
-    <!-- =====================================================
-         GOOGLE FONT
-    ====================================================== -->
-
+    <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
 
-
-    <!-- =====================================================
-         BOOTSTRAP 5.2.3
-    ====================================================== -->
-
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-    <!-- =====================================================
-         BOOTSTRAP ICONS
-    ====================================================== -->
-
+    <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-
-    <!-- =====================================================
-         YOUR EXISTING CSS
-    ====================================================== -->
-
+    <!-- EXISTING CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
-
-    <!-- =====================================================
-         DATA SAFE SYSTEMS CUSTOM STYLING
-    ====================================================== -->
 
     <style>
         /* =====================================================
@@ -55,7 +36,6 @@
         ====================================================== */
 
         :root {
-
             --burgundy: #800020;
             --burgundy-dark: #5c0018;
             --burgundy-light: #a52a45;
@@ -69,7 +49,6 @@
             --text-gray: #5f6b7a;
 
             --white: #ffffff;
-
         }
 
 
@@ -82,35 +61,39 @@
         }
 
         body {
-
             margin: 0;
-
             font-family: "Raleway", Arial, sans-serif;
-
             color: var(--text-dark);
-
             background: #ffffff;
-
         }
 
 
         /* =====================================================
-           HEADER
+           WEBSITE HEADER
+           BG IMAGE: assets/img/bg.jpg
         ====================================================== */
 
         .dss-header {
 
-            background: var(--navy);
+            position: relative;
 
-            padding: 45px 20px 50px;
+            padding: 38px 20px 42px;
 
             text-align: center;
 
-            position: relative;
-
             overflow: hidden;
 
+            background:
+                linear-gradient(135deg,
+                    rgba(7, 26, 45, 0.90),
+                    rgba(92, 0, 24, 0.78)),
+                url("assets/img/bg.jpg") center center / cover no-repeat;
+
+            color: #ffffff;
         }
+
+
+        /* Header image overlay */
 
         .dss-header::before {
 
@@ -118,17 +101,21 @@
 
             position: absolute;
 
-            width: 450px;
-            height: 450px;
+            inset: 0;
 
-            border-radius: 50%;
+            background:
+                linear-gradient(90deg,
+                    rgba(3, 19, 33, 0.78) 0%,
+                    rgba(7, 26, 45, 0.55) 50%,
+                    rgba(92, 0, 24, 0.68) 100%);
 
-            border: 1px solid rgba(165, 42, 69, 0.20);
+            z-index: 0;
 
-            right: -180px;
-            top: -200px;
-
+            pointer-events: none;
         }
+
+
+        /* Decorative circle */
 
         .dss-header::after {
 
@@ -136,17 +123,24 @@
 
             position: absolute;
 
-            width: 300px;
-            height: 300px;
+            width: 420px;
+
+            height: 420px;
 
             border-radius: 50%;
 
-            border: 1px solid rgba(165, 42, 69, 0.12);
+            border:
+                1px solid rgba(255, 255, 255, 0.14);
 
-            left: -160px;
-            bottom: -180px;
+            right: -180px;
 
+            top: -220px;
+
+            z-index: 1;
+
+            pointer-events: none;
         }
+
 
         .header-content {
 
@@ -154,13 +148,17 @@
 
             z-index: 2;
 
+            max-width: 1200px;
+
+            margin: 0 auto;
         }
+
 
         .header-upper {
 
             display: block;
 
-            color: #d9a1af;
+            color: #f0bdc9;
 
             font-size: 15px;
 
@@ -170,9 +168,12 @@
 
             text-transform: uppercase;
 
-            margin-bottom: 8px;
+            margin-bottom: 6px;
 
+            text-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.40);
         }
+
 
         .header-lower {
 
@@ -186,28 +187,35 @@
 
             letter-spacing: 1px;
 
+            text-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.50);
         }
+
 
         .header-tagline {
 
-            color: #d9e0e8;
+            color: #f0f3f6;
 
             font-size: 16px;
 
-            margin-top: 12px;
+            margin-top: 10px;
 
+            text-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.45);
         }
 
 
         /* =====================================================
-           NAVIGATION
+           MAIN NAVIGATION
+           EXTRA COMPACT
         ====================================================== */
 
         #mainNav {
 
             background: #ffffff !important;
 
-            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.10);
+            box-shadow:
+                0 3px 18px rgba(0, 0, 0, 0.10);
 
             position: sticky;
 
@@ -215,19 +223,20 @@
 
             z-index: 1030;
 
-            padding: 8px 0;
+            padding: 1.7px 0 !important;
 
+            min-height: 26px;
         }
+
 
         #mainNav .container {
 
-            min-height: 82px;
-
+            min-height: 26px;
         }
 
 
         /* =====================================================
-           LOGO - ICON.JPG
+           NAVIGATION LOGO
         ====================================================== */
 
         #mainNav .navbar-brand {
@@ -245,7 +254,6 @@
             text-decoration: none !important;
 
             flex-shrink: 0;
-
         }
 
 
@@ -253,20 +261,19 @@
 
             display: block !important;
 
-            width: 200px !important;
+            width: 92px !important;
 
             height: auto !important;
 
-            max-width: 200px !important;
+            max-width: 92px !important;
 
-            min-width: 200px !important;
+            min-width: 92px !important;
 
             object-fit: contain !important;
 
             visibility: visible !important;
 
             opacity: 1 !important;
-
         }
 
 
@@ -277,38 +284,40 @@
         #mainNav .navbar-nav {
 
             align-items: center;
-
         }
+
 
         #mainNav .nav-link {
 
             color: #1a1a1a !important;
 
-            font-size: 14px;
+            font-size: 12px;
 
             font-weight: 800;
 
-            letter-spacing: 0.6px;
+            letter-spacing: 0.5px;
 
-            padding: 12px 18px !important;
+            padding: 3px 12px !important;
 
             position: relative;
 
-            transition: all 0.25s ease;
+            line-height: 1.15;
 
+            transition: all 0.25s ease;
         }
+
 
         #mainNav .nav-link:hover {
 
             color: var(--burgundy) !important;
-
         }
+
 
         #mainNav .nav-link.active {
 
             color: var(--burgundy) !important;
-
         }
+
 
         #mainNav .nav-link.active::after {
 
@@ -316,46 +325,17 @@
 
             position: absolute;
 
-            height: 3px;
+            height: 2px;
 
-            left: 18px;
+            left: 12px;
 
-            right: 18px;
+            right: 12px;
 
-            bottom: 3px;
+            bottom: 0;
 
             background: var(--burgundy);
 
             border-radius: 3px;
-
-        }
-
-
-        /* =====================================================
-           MOBILE NAVIGATION BUTTON
-        ====================================================== */
-
-        #mainNav .navbar-toggler {
-
-            border: 1px solid #cccccc !important;
-
-            padding: 8px 10px;
-
-        }
-
-        #mainNav .navbar-toggler:focus {
-
-            box-shadow:
-                0 0 0 3px rgba(128, 0, 32, 0.15) !important;
-
-        }
-
-        #mainNav .navbar-toggler-icon {
-
-            width: 1.5em;
-
-            height: 1.5em;
-
         }
 
 
@@ -369,31 +349,61 @@
 
             color: #ffffff !important;
 
-            border-radius: 6px;
+            border-radius: 4px;
 
-            margin-left: 8px;
+            margin-left: 4px;
 
-            padding: 11px 20px !important;
+            padding: 3px 11px !important;
 
+            line-height: 1.15;
         }
+
 
         #mainNav .nav-support:hover {
 
             background: var(--burgundy-dark);
 
             color: #ffffff !important;
-
         }
+
 
         #mainNav .nav-support::after {
 
             display: none;
-
         }
 
 
         /* =====================================================
-           HERO SECTION
+           MOBILE MENU
+        ====================================================== */
+
+        #mainNav .navbar-toggler {
+
+            border: 1px solid #cccccc !important;
+
+            padding: 2px 5px;
+
+            line-height: 1;
+        }
+
+
+        #mainNav .navbar-toggler:focus {
+
+            box-shadow:
+                0 0 0 3px rgba(128, 0, 32, 0.15) !important;
+        }
+
+
+        #mainNav .navbar-toggler-icon {
+
+            width: 1em;
+
+            height: 1em;
+        }
+
+
+        /* =====================================================
+           HERO
         ====================================================== */
 
         .hero-section {
@@ -414,8 +424,8 @@
                     rgba(5, 20, 35, 0.88) 45%,
                     rgba(5, 20, 35, 0.55) 100%),
                 url("assets/img/intro.jpg") center center / cover no-repeat;
-
         }
+
 
         .hero-content {
 
@@ -424,8 +434,8 @@
             padding: 80px 0;
 
             color: #ffffff;
-
         }
+
 
         .hero-kicker {
 
@@ -440,8 +450,8 @@
             text-transform: uppercase;
 
             margin-bottom: 15px;
-
         }
+
 
         .hero-title {
 
@@ -452,14 +462,14 @@
             font-weight: 900;
 
             margin-bottom: 25px;
-
         }
+
 
         .hero-title span {
 
             color: var(--burgundy-light);
-
         }
+
 
         .hero-text {
 
@@ -472,8 +482,8 @@
             max-width: 630px;
 
             margin-bottom: 30px;
-
         }
+
 
         .hero-buttons {
 
@@ -482,7 +492,6 @@
             flex-wrap: wrap;
 
             gap: 12px;
-
         }
 
 
@@ -515,8 +524,8 @@
             text-decoration: none;
 
             transition: all 0.25s ease;
-
         }
+
 
         .btn-dss:hover {
 
@@ -527,8 +536,8 @@
             color: #ffffff;
 
             transform: translateY(-2px);
-
         }
+
 
         .btn-dss-outline {
 
@@ -553,15 +562,14 @@
             text-decoration: none;
 
             transition: all 0.25s ease;
-
         }
+
 
         .btn-dss-outline:hover {
 
             background: #ffffff;
 
             color: var(--navy);
-
         }
 
 
@@ -576,8 +584,8 @@
             position: relative;
 
             z-index: 5;
-
         }
+
 
         .hero-features-box {
 
@@ -589,8 +597,8 @@
 
             box-shadow:
                 0 12px 35px rgba(0, 0, 0, 0.13);
-
         }
+
 
         .hero-feature {
 
@@ -599,14 +607,14 @@
             padding: 10px 20px;
 
             border-right: 1px solid #e3e3e3;
-
         }
+
 
         .hero-feature:last-child {
 
             border-right: none;
-
         }
+
 
         .hero-feature-icon {
 
@@ -629,8 +637,8 @@
             color: var(--burgundy);
 
             font-size: 25px;
-
         }
+
 
         .hero-feature h5 {
 
@@ -639,8 +647,8 @@
             font-weight: 800;
 
             margin-bottom: 5px;
-
         }
+
 
         .hero-feature p {
 
@@ -649,7 +657,6 @@
             font-size: 13px;
 
             margin: 0;
-
         }
 
 
@@ -660,8 +667,8 @@
         .dss-section {
 
             padding: 90px 0;
-
         }
+
 
         .section-kicker {
 
@@ -676,8 +683,8 @@
             text-transform: uppercase;
 
             margin-bottom: 10px;
-
         }
+
 
         .section-title {
 
@@ -690,14 +697,14 @@
             font-weight: 900;
 
             margin-bottom: 20px;
-
         }
+
 
         .section-title span {
 
             color: var(--burgundy);
-
         }
+
 
         .section-text {
 
@@ -706,7 +713,6 @@
             font-size: 17px;
 
             line-height: 1.8;
-
         }
 
 
@@ -717,8 +723,8 @@
         .about-section {
 
             background: #ffffff;
-
         }
+
 
         .about-image {
 
@@ -732,8 +738,8 @@
 
             box-shadow:
                 0 15px 35px rgba(0, 0, 0, 0.12);
-
         }
+
 
         .check-list {
 
@@ -742,8 +748,8 @@
             padding: 0;
 
             margin: 25px 0;
-
         }
+
 
         .check-list li {
 
@@ -752,15 +758,14 @@
             font-weight: 600;
 
             margin-bottom: 14px;
-
         }
+
 
         .check-list i {
 
             color: var(--burgundy);
 
             margin-right: 10px;
-
         }
 
 
@@ -771,8 +776,8 @@
         .services-section {
 
             background: var(--light-bg);
-
         }
+
 
         .service-card {
 
@@ -792,8 +797,8 @@
                 0 4px 15px rgba(0, 0, 0, 0.04);
 
             transition: all 0.3s ease;
-
         }
+
 
         .service-card:hover {
 
@@ -803,8 +808,8 @@
 
             box-shadow:
                 0 15px 30px rgba(92, 0, 24, 0.12);
-
         }
+
 
         .service-icon {
 
@@ -827,8 +832,8 @@
             color: #ffffff;
 
             font-size: 27px;
-
         }
+
 
         .service-card h4 {
 
@@ -839,8 +844,8 @@
             font-weight: 800;
 
             margin-bottom: 12px;
-
         }
+
 
         .service-card p {
 
@@ -849,7 +854,6 @@
             line-height: 1.7;
 
             margin-bottom: 0;
-
         }
 
 
@@ -869,8 +873,8 @@
             position: relative;
 
             overflow: hidden;
-
         }
+
 
         .promise-card {
 
@@ -884,8 +888,8 @@
                 1px solid rgba(255, 255, 255, 0.15);
 
             border-radius: 12px;
-
         }
+
 
         .promise-card h2 {
 
@@ -894,23 +898,22 @@
             font-weight: 900;
 
             margin-bottom: 20px;
-
         }
+
 
         .promise-card p {
 
             color: rgba(255, 255, 255, 0.85);
 
             line-height: 1.8;
-
         }
+
 
         .promise-highlight {
 
             color: #d9a1af;
 
             font-weight: 800;
-
         }
 
 
@@ -930,8 +933,8 @@
 
             box-shadow:
                 0 15px 35px rgba(0, 0, 0, 0.16);
-
         }
+
 
         .contact-card h3 {
 
@@ -942,42 +945,59 @@
             font-weight: 900;
 
             margin-bottom: 15px;
-
         }
 
 
         /* =====================================================
-           CHAMBER
+           CHAMBER OF COMMERCE
+           COMPACT 60% REDUCED VERSION
         ====================================================== */
 
         .chamber-section {
 
-            padding: 55px 0;
+            padding: 9px 0 !important;
 
             background: #ffffff;
 
             text-align: center;
 
+            line-height: 1;
         }
+
+
+        .chamber-section .container {
+
+            padding-top: 0 !important;
+
+            padding-bottom: 0 !important;
+        }
+
 
         .chamber-logo {
 
-            width: 220px;
+            display: block;
+
+            width: 120px !important;
 
             max-width: 100%;
 
             height: auto;
 
-            margin-bottom: 15px;
-
+            margin: 0 auto 2px !important;
         }
+
 
         .chamber-section p {
 
             color: var(--text-gray);
 
-            margin-bottom: 0;
+            margin: 0 !important;
 
+            padding: 0 !important;
+
+            font-size: 12px;
+
+            line-height: 1.2;
         }
 
 
@@ -992,13 +1012,8 @@
             color: #ffffff;
 
             padding: 55px 0 25px;
-
         }
 
-
-        /* =====================================================
-           FOOTER LOGO - ICON.JPG
-        ====================================================== */
 
         .footer-logo {
 
@@ -1013,7 +1028,6 @@
             margin-bottom: 18px;
 
             object-fit: contain !important;
-
         }
 
 
@@ -1022,8 +1036,8 @@
             color: #aebdcc;
 
             line-height: 1.7;
-
         }
+
 
         .footer h5 {
 
@@ -1034,8 +1048,8 @@
             font-weight: 800;
 
             margin-bottom: 20px;
-
         }
+
 
         .footer-links {
 
@@ -1044,14 +1058,14 @@
             padding: 0;
 
             margin: 0;
-
         }
+
 
         .footer-links li {
 
             margin-bottom: 10px;
-
         }
+
 
         .footer-links a {
 
@@ -1060,16 +1074,16 @@
             text-decoration: none;
 
             transition: all 0.25s ease;
-
         }
+
 
         .footer-links a:hover {
 
             color: #d9a1af;
 
             padding-left: 4px;
-
         }
+
 
         .footer-divider {
 
@@ -1077,15 +1091,14 @@
                 1px solid rgba(255, 255, 255, 0.10);
 
             margin: 35px 0 20px;
-
         }
+
 
         .copyright {
 
             color: #8494a6;
 
             font-size: 13px;
-
         }
 
 
@@ -1127,15 +1140,14 @@
                 0 8px 20px rgba(92, 0, 24, 0.30);
 
             transition: all 0.25s ease;
-
         }
+
 
         #backToTop:hover {
 
             background: var(--burgundy-dark);
 
             transform: translateY(-3px);
-
         }
 
 
@@ -1147,65 +1159,81 @@
 
             .dss-header {
 
-                padding: 35px 20px;
-
+                padding: 32px 20px 36px;
             }
+
 
             .header-lower {
 
                 font-size: 34px;
-
             }
+
+
+            #mainNav {
+
+                padding: 1.7px 0 !important;
+
+                min-height: 26px;
+            }
+
+
+            #mainNav .container {
+
+                min-height: 26px;
+            }
+
 
             #mainNav .navbar-nav {
 
                 align-items: flex-start;
 
-                padding-top: 15px;
+                padding-top: 4px;
 
                 width: 100%;
-
             }
+
 
             #mainNav .nav-link {
 
-                padding: 10px !important;
-
+                padding: 4px 8px !important;
             }
+
 
             #mainNav .nav-support {
 
                 margin-left: 0;
 
-                margin-top: 8px;
+                margin-top: 3px;
 
                 display: inline-flex;
 
+                padding: 4px 11px !important;
             }
+
 
             .hero-section {
 
                 min-height: 540px;
-
             }
+
 
             .hero-content {
 
                 padding: 70px 20px;
-
             }
+
 
             .hero-title {
 
                 font-size: 48px;
-
             }
+
 
             .hero-features {
 
                 margin-top: 30px;
-
             }
+
 
             .hero-feature {
 
@@ -1215,27 +1243,48 @@
                     1px solid #e3e3e3;
 
                 padding: 20px;
-
             }
+
 
             .hero-feature:last-child {
 
                 border-bottom: none;
-
             }
+
 
             .dss-section {
 
                 padding: 70px 0;
-
             }
+
 
             .about-image {
 
                 height: 350px;
 
                 margin-bottom: 20px;
+            }
 
+
+            .chamber-section {
+
+                padding: 8px 0 !important;
+            }
+
+
+            .chamber-logo {
+
+                width: 115px !important;
+
+                margin-bottom: 2px !important;
+            }
+
+
+            .chamber-section p {
+
+                font-size: 11px;
+
+                line-height: 1.15;
             }
 
         }
@@ -1249,126 +1298,259 @@
 
             .dss-header {
 
-                padding: 30px 15px;
-
+                padding: 28px 15px 32px;
             }
+
 
             .header-upper {
 
                 font-size: 11px;
 
                 letter-spacing: 2px;
-
             }
+
 
             .header-lower {
 
                 font-size: 28px;
-
             }
+
 
             .header-tagline {
 
                 font-size: 13px;
-
             }
 
 
-            /* MOBILE LOGO */
+            #mainNav {
 
-            #mainNav .dss-logo {
+                padding: 1.4px 0 !important;
 
-                width: 170px !important;
-
-                min-width: 170px !important;
-
-                max-width: 170px !important;
-
-                height: auto !important;
-
+                min-height: 25px;
             }
 
 
             #mainNav .container {
 
-                min-height: 70px;
-
+                min-height: 25px;
             }
 
 
-            /* MOBILE FOOTER LOGO */
+            #mainNav .dss-logo {
+
+                width: 85px !important;
+
+                min-width: 85px !important;
+
+                max-width: 85px !important;
+
+                height: auto !important;
+            }
+
+
+            #mainNav .navbar-toggler {
+
+                padding: 1px 4px;
+
+                line-height: 1;
+            }
+
+
+            #mainNav .navbar-toggler-icon {
+
+                width: 1em;
+
+                height: 1em;
+            }
+
+
+            #mainNav .nav-link {
+
+                padding: 2.5px 7px !important;
+
+                font-size: 11px;
+
+                line-height: 1.1;
+            }
+
+
+            #mainNav .nav-support {
+
+                padding: 3px 10px !important;
+
+                margin-top: 2px;
+            }
+
 
             .footer-logo {
 
                 width: 170px !important;
-
             }
 
 
             .hero-section {
 
                 min-height: 580px;
-
             }
+
 
             .hero-content {
 
                 padding: 60px 20px;
-
             }
+
 
             .hero-title {
 
                 font-size: 39px;
-
             }
+
 
             .hero-text {
 
                 font-size: 16px;
-
             }
+
 
             .hero-buttons {
 
                 flex-direction: column;
 
                 width: 100%;
-
             }
+
 
             .btn-dss,
             .btn-dss-outline {
 
                 width: 100%;
-
             }
+
 
             .section-title {
 
                 font-size: 34px;
-
             }
+
 
             .about-image {
 
                 height: 280px;
-
             }
+
 
             .promise-card,
             .contact-card {
 
                 padding: 30px;
-
             }
+
+
+            .chamber-section {
+
+                padding: 7px 8px !important;
+            }
+
+
+            .chamber-logo {
+
+                width: 105px !important;
+
+                margin-bottom: 2px !important;
+            }
+
+
+            .chamber-section p {
+
+                font-size: 10px;
+
+                line-height: 1.15;
+            }
+
 
             #backToTop {
 
                 right: 15px;
 
                 bottom: 15px;
+            }
 
+        }
+
+
+        /* =====================================================
+           FINAL CHAMBER SAFETY OVERRIDES
+        ====================================================== */
+
+        .chamber-section {
+
+            padding-top: 9px !important;
+
+            padding-bottom: 9px !important;
+        }
+
+
+        .chamber-section .container {
+
+            padding-top: 0 !important;
+
+            padding-bottom: 0 !important;
+        }
+
+
+        .chamber-section .chamber-logo {
+
+            display: block !important;
+
+            width: 120px !important;
+
+            height: auto !important;
+
+            margin: 0 auto 2px !important;
+        }
+
+
+        .chamber-section p {
+
+            margin-top: 0 !important;
+
+            margin-bottom: 0 !important;
+
+            padding: 0 !important;
+        }
+
+
+        @media (max-width: 991px) {
+
+            .chamber-section {
+
+                padding-top: 8px !important;
+
+                padding-bottom: 8px !important;
+            }
+
+
+            .chamber-section .chamber-logo {
+
+                width: 115px !important;
+            }
+
+        }
+
+
+        @media (max-width: 576px) {
+
+            .chamber-section {
+
+                padding-top: 7px !important;
+
+                padding-bottom: 7px !important;
+            }
+
+
+            .chamber-section .chamber-logo {
+
+                width: 105px !important;
             }
 
         }
@@ -1382,6 +1564,7 @@
 
     <!-- =====================================================
          WEBSITE HEADER
+         BACKGROUND IMAGE: assets/img/bg.jpg
     ====================================================== -->
 
     <header class="dss-header">
@@ -1406,20 +1589,12 @@
 
 
     <!-- =====================================================
-         NAVIGATION
+         MAIN NAVIGATION
     ====================================================== -->
 
     <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
 
         <div class="container">
-
-
-            <!-- =================================================
-                 DATA SAFE SYSTEMS LOGO
-
-                 FILE:
-                 assets/img/ICON.JPG
-            ================================================== -->
 
             <a class="navbar-brand" href="index.html">
 
@@ -1427,8 +1602,6 @@
 
             </a>
 
-
-            <!-- MOBILE MENU -->
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -1439,12 +1612,9 @@
             </button>
 
 
-            <!-- NAVIGATION LINKS -->
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav ms-auto">
-
 
                     <li class="nav-item">
 
@@ -1502,7 +1672,6 @@
 
                     </li>
 
-
                 </ul>
 
             </div>
@@ -1513,7 +1682,7 @@
 
 
     <!-- =====================================================
-         HERO SECTION
+         HERO
     ====================================================== -->
 
     <section class="hero-section">
@@ -1553,6 +1722,7 @@
                         <i class="bi bi-arrow-right"></i>
 
                     </a>
+
 
                     <a href="store.html" class="btn-dss-outline">
 
@@ -1673,7 +1843,6 @@
 
                     </div>
 
-
                 </div>
 
             </div>
@@ -1684,7 +1853,7 @@
 
 
     <!-- =====================================================
-         ABOUT / INTRO
+         ABOUT
     ====================================================== -->
 
     <section class="about-section dss-section">
@@ -1693,10 +1862,10 @@
 
             <div class="row align-items-center g-5">
 
-
                 <div class="col-lg-6">
 
-                    <img src="./assets/img/intro.jpg" class="about-image" alt="Data Safe Systems IT services">
+                    <img src="./assets/img/intro.jpg" class="about-image" alt="Data Safe Systems IT services"
+                        loading="lazy">
 
                 </div>
 
@@ -1726,35 +1895,23 @@
                     <ul class="check-list">
 
                         <li>
-
                             <i class="bi bi-check-circle-fill"></i>
-
                             Cutting-edge technology and best practices
-
                         </li>
 
                         <li>
-
                             <i class="bi bi-check-circle-fill"></i>
-
                             Customized solutions for your business
-
                         </li>
 
                         <li>
-
                             <i class="bi bi-check-circle-fill"></i>
-
                             Security, reliability, and peace of mind
-
                         </li>
 
                         <li>
-
                             <i class="bi bi-check-circle-fill"></i>
-
                             Commercial and residential support
-
                         </li>
 
                     </ul>
@@ -1784,7 +1941,6 @@
     <section class="services-section dss-section">
 
         <div class="container">
-
 
             <div class="text-center mb-5">
 
@@ -1817,9 +1973,7 @@
                     <div class="service-card">
 
                         <div class="service-icon">
-
                             <i class="bi bi-pc-display"></i>
-
                         </div>
 
                         <h4>
@@ -1827,10 +1981,8 @@
                         </h4>
 
                         <p>
-
                             Towers, PCs, laptops, servers,
                             hardware, software, and device setup.
-
                         </p>
 
                     </div>
@@ -1843,9 +1995,7 @@
                     <div class="service-card">
 
                         <div class="service-icon">
-
                             <i class="bi bi-diagram-3"></i>
-
                         </div>
 
                         <h4>
@@ -1853,10 +2003,8 @@
                         </h4>
 
                         <p>
-
                             Routers, modems, firewalls,
                             network installations, and troubleshooting.
-
                         </p>
 
                     </div>
@@ -1869,9 +2017,7 @@
                     <div class="service-card">
 
                         <div class="service-icon">
-
                             <i class="bi bi-shield-lock"></i>
-
                         </div>
 
                         <h4>
@@ -1879,11 +2025,9 @@
                         </h4>
 
                         <p>
-
                             Virus and malware protection,
                             network security, firewalls,
                             and security solutions.
-
                         </p>
 
                     </div>
@@ -1896,9 +2040,7 @@
                     <div class="service-card">
 
                         <div class="service-icon">
-
                             <i class="bi bi-cloud-check"></i>
-
                         </div>
 
                         <h4>
@@ -1906,10 +2048,8 @@
                         </h4>
 
                         <p>
-
                             Migration, cloud solutions,
                             Hyper-V, VMware, and virtualization.
-
                         </p>
 
                     </div>
@@ -1922,9 +2062,7 @@
                     <div class="service-card">
 
                         <div class="service-icon">
-
                             <i class="bi bi-headset"></i>
-
                         </div>
 
                         <h4>
@@ -1932,11 +2070,9 @@
                         </h4>
 
                         <p>
-
                             Break-fix services, device setup,
                             hardware/software support,
                             and third-party applications.
-
                         </p>
 
                     </div>
@@ -1949,9 +2085,7 @@
                     <div class="service-card">
 
                         <div class="service-icon">
-
                             <i class="bi bi-mortarboard"></i>
-
                         </div>
 
                         <h4>
@@ -1959,10 +2093,8 @@
                         </h4>
 
                         <p>
-
                             One-on-one or group technology training
                             customized to your needs and skill level.
-
                         </p>
 
                     </div>
@@ -2073,12 +2205,11 @@
 
         <div class="container">
 
-            <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce">
+            <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce"
+                loading="lazy">
 
             <p>
-
                 Proud member of the Greater East Pasco Chamber of Commerce
-
             </p>
 
         </div>
@@ -2098,11 +2229,6 @@
 
 
                 <div class="col-lg-5">
-
-                    <!-- =================================================
-                         DATA SAFE SYSTEMS FOOTER LOGO
-                         FILE: assets/img/ICON.JPG
-                    ================================================== -->
 
                     <img src="./assets/img/ICON.JPG" class="footer-logo" alt="Data Safe Systems LLC" loading="lazy">
 
@@ -2126,27 +2252,19 @@
                     <ul class="footer-links">
 
                         <li>
-                            <a href="index.html">
-                                Home
-                            </a>
+                            <a href="index.html">Home</a>
                         </li>
 
                         <li>
-                            <a href="about.html">
-                                About Us
-                            </a>
+                            <a href="about.html">About Us</a>
                         </li>
 
                         <li>
-                            <a href="products.html">
-                                Services
-                            </a>
+                            <a href="products.html">Services</a>
                         </li>
 
                         <li>
-                            <a href="store.html">
-                                Contact Us
-                            </a>
+                            <a href="store.html">Contact Us</a>
                         </li>
 
                     </ul>
@@ -2196,7 +2314,6 @@
 
                 </div>
 
-
             </div>
 
 
@@ -2204,9 +2321,9 @@
 
 
             <div class="d-flex flex-column flex-md-row
-                       justify-content-between
-                       align-items-center
-                       gap-3">
+                        justify-content-between
+                        align-items-center
+                        gap-3">
 
                 <div class="copyright">
 
@@ -2219,6 +2336,7 @@
                     All Rights Reserved.
 
                 </div>
+
 
                 <div class="copyright">
 
@@ -2248,12 +2366,11 @@
          BOOTSTRAP JAVASCRIPT
     ====================================================== -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- =====================================================
-         YOUR EXISTING JAVASCRIPT
+         EXISTING JAVASCRIPT
     ====================================================== -->
 
     <script src="js/scripts.js"></script>
@@ -2266,62 +2383,79 @@
     <script>
 
         /* =====================================================
-           AUTOMATIC COPYRIGHT YEAR
+           COPYRIGHT YEAR
         ====================================================== */
 
-        const currentYear =
-            document.getElementById("currentYear");
+        document.addEventListener("DOMContentLoaded", function () {
 
-        if (currentYear) {
+            const currentYear =
+                document.getElementById("currentYear");
 
-            currentYear.textContent =
-                new Date().getFullYear();
+            if (currentYear) {
 
-        }
+                currentYear.textContent =
+                    new Date().getFullYear();
 
-
-        /* =====================================================
-           BACK TO TOP
-        ====================================================== */
-
-        const backToTop =
-            document.getElementById("backToTop");
+            }
 
 
-        if (backToTop) {
+            /* =================================================
+               BACK TO TOP
+            ================================================== */
 
-            window.addEventListener("scroll", function () {
+            const backToTop =
+                document.getElementById("backToTop");
 
-                if (window.scrollY > 300) {
 
-                    backToTop.style.display = "flex";
+            if (backToTop) {
 
-                } else {
+                function updateBackToTop() {
 
-                    backToTop.style.display = "none";
+                    if (window.scrollY > 300) {
+
+                        backToTop.style.display = "flex";
+
+                    } else {
+
+                        backToTop.style.display = "none";
+
+                    }
 
                 }
 
-            });
+
+                window.addEventListener(
+                    "scroll",
+                    updateBackToTop,
+                    { passive: true }
+                );
 
 
-            backToTop.addEventListener("click", function () {
+                backToTop.addEventListener(
+                    "click",
+                    function () {
 
-                window.scrollTo({
+                        window.scrollTo({
 
-                    top: 0,
+                            top: 0,
 
-                    behavior: "smooth"
+                            behavior: "smooth"
 
-                });
+                        });
 
-            });
+                    }
+                );
 
-        }
+
+                updateBackToTop();
+
+            }
+
+        });
 
     </script>
-
 
 </body>
 
 </html>
+```
