@@ -2,108 +2,2076 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Data Safe Systems LLC</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Google fonts-->
-    <link
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Data Safe Systems LLC - Learn about our IT services, expertise, customer commitment, and technology solutions.">
+
+    <meta name="author" content="Data Safe Systems LLC">
+
+    <title>About Us | Data Safe Systems</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- EXISTING CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <style>
+        /* =====================================================
+           COLORS
+        ====================================================== */
+
+        :root {
+
+            --burgundy: #800020;
+            --burgundy-dark: #5c0018;
+            --burgundy-light: #a52a45;
+
+            --navy: #071a2d;
+            --navy-light: #0d2d4b;
+
+            --light-bg: #f8f5f6;
+
+            --text-dark: #172033;
+            --text-gray: #5f6b7a;
+
+            --white: #ffffff;
+        }
+
+
+        /* =====================================================
+           GENERAL
+        ====================================================== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family: "Raleway", Arial, sans-serif;
+
+            color: var(--text-dark);
+
+            background: #ffffff;
+        }
+
+
+        /* =====================================================
+           WEBSITE HEADER
+           SAME STYLE AS SCRIPT 1
+           COMPLETE bg.jpg FIT
+        ====================================================== */
+
+        .dss-header {
+
+            position: relative;
+
+            width: 100%;
+
+            min-height: 190px;
+
+            padding: 38px 20px 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            overflow: hidden;
+
+            background-color: #071a2d;
+
+            background-image: url("assets/img/bg.jpg");
+
+            background-position: center center;
+
+            background-size: 100% 100%;
+
+            background-repeat: no-repeat;
+
+            color: #ffffff;
+        }
+
+
+        /* =====================================================
+           HEADER OVERLAY
+        ====================================================== */
+
+        .dss-header::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(3, 19, 33, 0.62) 0%,
+                    rgba(7, 26, 45, 0.40) 50%,
+                    rgba(92, 0, 24, 0.56) 100%);
+
+            z-index: 0;
+
+            pointer-events: none;
+        }
+
+
+        /* =====================================================
+           HEADER DECORATION
+        ====================================================== */
+
+        .dss-header::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 420px;
+
+            height: 420px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(255, 255, 255, 0.14);
+
+            right: -180px;
+
+            top: -220px;
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        /* =====================================================
+           HEADER CONTENT
+        ====================================================== */
+
+        .header-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+        }
+
+
+        .header-upper {
+
+            display: block;
+
+            color: #f0bdc9;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 6px;
+
+            text-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.40);
+        }
+
+
+        .header-lower {
+
+            display: block;
+
+            color: #ffffff;
+
+            font-size: 42px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            text-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.50);
+        }
+
+
+        .header-tagline {
+
+            color: #f0f3f6;
+
+            font-size: 16px;
+
+            margin-top: 10px;
+
+            text-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.45);
+        }
+
+
+        /* =====================================================
+           MAIN NAVIGATION
+           SAME COMPACT NAVIGATION AS SCRIPT 1
+        ====================================================== */
+
+        #mainNav {
+
+            background: #ffffff !important;
+
+            box-shadow:
+                0 3px 18px rgba(0, 0, 0, 0.10);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1030;
+
+            padding: 1.7px 0 !important;
+
+            min-height: 26px;
+        }
+
+
+        #mainNav .container {
+
+            min-height: 26px;
+        }
+
+
+        /* =====================================================
+           NAVIGATION LOGO
+        ====================================================== */
+
+        #mainNav .navbar-brand {
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            justify-content: flex-start !important;
+
+            padding: 0 !important;
+
+            margin: 0 !important;
+
+            text-decoration: none !important;
+
+            flex-shrink: 0;
+        }
+
+
+        #mainNav .dss-logo {
+
+            display: block !important;
+
+            width: 92px !important;
+
+            height: auto !important;
+
+            max-width: 92px !important;
+
+            min-width: 92px !important;
+
+            object-fit: contain !important;
+
+            visibility: visible !important;
+
+            opacity: 1 !important;
+        }
+
+
+        /* =====================================================
+           NAVIGATION LINKS
+        ====================================================== */
+
+        #mainNav .navbar-nav {
+
+            align-items: center;
+        }
+
+
+        #mainNav .nav-link {
+
+            color: #1a1a1a !important;
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.5px;
+
+            padding: 3px 12px !important;
+
+            position: relative;
+
+            line-height: 1.15;
+
+            transition: all 0.25s ease;
+        }
+
+
+        #mainNav .nav-link:hover {
+
+            color: var(--burgundy) !important;
+        }
+
+
+        #mainNav .nav-link.active {
+
+            color: var(--burgundy) !important;
+        }
+
+
+        #mainNav .nav-link.active::after {
+
+            content: "";
+
+            position: absolute;
+
+            height: 2px;
+
+            left: 12px;
+
+            right: 12px;
+
+            bottom: 0;
+
+            background: var(--burgundy);
+
+            border-radius: 3px;
+        }
+
+
+        /* =====================================================
+           SUPPORT BUTTON
+        ====================================================== */
+
+        #mainNav .nav-support {
+
+            background: var(--burgundy);
+
+            color: #ffffff !important;
+
+            border-radius: 4px;
+
+            margin-left: 4px;
+
+            padding: 3px 11px !important;
+
+            line-height: 1.15;
+        }
+
+
+        #mainNav .nav-support:hover {
+
+            background: var(--burgundy-dark);
+
+            color: #ffffff !important;
+        }
+
+
+        #mainNav .nav-support::after {
+
+            display: none;
+        }
+
+
+        /* =====================================================
+           MOBILE MENU
+        ====================================================== */
+
+        #mainNav .navbar-toggler {
+
+            border: 1px solid #cccccc !important;
+
+            padding: 2px 5px;
+
+            line-height: 1;
+        }
+
+
+        #mainNav .navbar-toggler:focus {
+
+            box-shadow:
+                0 0 0 3px rgba(128, 0, 32, 0.15) !important;
+        }
+
+
+        #mainNav .navbar-toggler-icon {
+
+            width: 1em;
+
+            height: 1em;
+        }
+
+
+        /* =====================================================
+           ABOUT HERO
+        ====================================================== */
+
+        .about-hero {
+
+            position: relative;
+
+            min-height: 500px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(5, 20, 35, 0.94) 0%,
+                    rgba(5, 20, 35, 0.82) 45%,
+                    rgba(5, 20, 35, 0.48) 100%),
+                url("assets/img/about.jpg") center center / cover no-repeat;
+        }
+
+
+        .about-hero-content {
+
+            max-width: 800px;
+
+            padding: 80px 0;
+
+            color: #ffffff;
+        }
+
+
+        .about-kicker {
+
+            color: #d9a1af;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
+
+
+        .about-hero-title {
+
+            font-size: 56px;
+
+            line-height: 1.08;
+
+            font-weight: 900;
+
+            margin-bottom: 25px;
+        }
+
+
+        .about-hero-title span {
+
+            color: var(--burgundy-light);
+        }
+
+
+        .about-hero-text {
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: rgba(255, 255, 255, 0.90);
+
+            max-width: 700px;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================================
+           ABOUT CONTENT SECTION
+        ====================================================== */
+
+        .about-section {
+
+            background: #ffffff;
+
+            padding: 90px 0;
+        }
+
+
+        .about-image {
+
+            width: 100%;
+
+            height: 460px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+
+        .section-kicker {
+
+            color: var(--burgundy);
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-title {
+
+            color: var(--navy);
+
+            font-size: 45px;
+
+            line-height: 1.15;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+        }
+
+
+        .section-title span {
+
+            color: var(--burgundy);
+        }
+
+
+        .section-text {
+
+            color: var(--text-gray);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           SERVICE PROMISE BOX
+        ====================================================== */
+
+        .service-promise {
+
+            background: var(--light-bg);
+
+            border-left: 5px solid var(--burgundy);
+
+            border-radius: 8px;
+
+            padding: 25px 30px;
+
+            margin-top: 30px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .service-promise h4 {
+
+            color: var(--navy);
+
+            font-size: 22px;
+
+            font-weight: 800;
+
+            margin-bottom: 12px;
+        }
+
+
+        .service-promise p {
+
+            color: var(--text-gray);
+
+            line-height: 1.75;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================================
+           CHECK LIST
+        ====================================================== */
+
+        .check-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 25px 0;
+        }
+
+
+        .check-list li {
+
+            color: #26364a;
+
+            font-weight: 600;
+
+            margin-bottom: 14px;
+        }
+
+
+        .check-list i {
+
+            color: var(--burgundy);
+
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           OUR COMMITMENT
+        ====================================================== */
+
+        .commitment-section {
+
+            background:
+                linear-gradient(135deg,
+                    #06182b 0%,
+                    #2f0c17 100%);
+
+            color: #ffffff;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 80px 0;
+        }
+
+
+        .commitment-card {
+
+            height: 100%;
+
+            padding: 40px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.15);
+
+            border-radius: 12px;
+        }
+
+
+        .commitment-card h2 {
+
+            font-size: 34px;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+        }
+
+
+        .commitment-card p {
+
+            color: rgba(255, 255, 255, 0.85);
+
+            line-height: 1.8;
+        }
+
+
+        .commitment-highlight {
+
+            color: #d9a1af;
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           CONTACT CARD
+        ====================================================== */
+
+        .contact-card {
+
+            height: 100%;
+
+            padding: 40px;
+
+            background: #ffffff;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.16);
+        }
+
+
+        .contact-card h3 {
+
+            color: var(--navy);
+
+            font-size: 28px;
+
+            font-weight: 900;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =====================================================
+           BUTTONS
+        ====================================================== */
+
+        .btn-dss {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            border: 2px solid var(--burgundy);
+
+            border-radius: 6px;
+
+            padding: 13px 25px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+        }
+
+
+        .btn-dss:hover {
+
+            background: var(--burgundy-dark);
+
+            border-color: var(--burgundy-dark);
+
+            color: #ffffff;
+
+            transform: translateY(-2px);
+        }
+
+
+        .btn-dss-outline {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: transparent;
+
+            color: #ffffff;
+
+            border: 2px solid #ffffff;
+
+            border-radius: 6px;
+
+            padding: 13px 25px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+        }
+
+
+        .btn-dss-outline:hover {
+
+            background: #ffffff;
+
+            color: var(--navy);
+        }
+
+
+        /* =====================================================
+           CHAMBER OF COMMERCE
+           SAME COMPACT STYLE AS SCRIPT 1
+        ====================================================== */
+
+        .chamber-section {
+
+            padding: 9px 0 !important;
+
+            background: #ffffff;
+
+            text-align: center;
+
+            line-height: 1;
+        }
+
+
+        .chamber-section .container {
+
+            padding-top: 0 !important;
+
+            padding-bottom: 0 !important;
+        }
+
+
+        .chamber-logo {
+
+            display: block;
+
+            width: 120px !important;
+
+            max-width: 100%;
+
+            height: auto;
+
+            margin: 0 auto 2px !important;
+        }
+
+
+        .chamber-section p {
+
+            color: var(--text-gray);
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            font-size: 12px;
+
+            line-height: 1.2;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        .footer {
+
+            background: #031321;
+
+            color: #ffffff;
+
+            padding: 55px 0 25px;
+        }
+
+
+        .footer-logo {
+
+            width: 200px !important;
+
+            height: auto !important;
+
+            max-width: 100% !important;
+
+            display: block !important;
+
+            margin-bottom: 18px;
+
+            object-fit: contain !important;
+        }
+
+
+        .footer p {
+
+            color: #aebdcc;
+
+            line-height: 1.7;
+        }
+
+
+        .footer h5 {
+
+            color: #ffffff;
+
+            font-size: 17px;
+
+            font-weight: 800;
+
+            margin-bottom: 20px;
+        }
+
+
+        .footer-links {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 0;
+        }
+
+
+        .footer-links li {
+
+            margin-bottom: 10px;
+        }
+
+
+        .footer-links a {
+
+            color: #aebdcc;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+        }
+
+
+        .footer-links a:hover {
+
+            color: #d9a1af;
+
+            padding-left: 4px;
+        }
+
+
+        .footer-divider {
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.10);
+
+            margin: 35px 0 20px;
+        }
+
+
+        .copyright {
+
+            color: #8494a6;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ====================================================== */
+
+        #backToTop {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 48px;
+
+            height: 48px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 8px 20px rgba(92, 0, 24, 0.30);
+
+            transition: all 0.25s ease;
+        }
+
+
+        #backToTop:hover {
+
+            background: var(--burgundy-dark);
+
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           TABLET
+        ====================================================== */
+
+        @media (max-width: 991px) {
+
+            .dss-header {
+
+                min-height: 175px;
+
+                padding: 32px 20px 36px;
+
+                background-size: 100% 100%;
+            }
+
+
+            .header-lower {
+
+                font-size: 34px;
+            }
+
+
+            #mainNav {
+
+                padding: 1.7px 0 !important;
+
+                min-height: 26px;
+            }
+
+
+            #mainNav .container {
+
+                min-height: 26px;
+            }
+
+
+            #mainNav .navbar-nav {
+
+                align-items: flex-start;
+
+                padding-top: 4px;
+
+                width: 100%;
+            }
+
+
+            #mainNav .nav-link {
+
+                padding: 4px 8px !important;
+            }
+
+
+            #mainNav .nav-support {
+
+                margin-left: 0;
+
+                margin-top: 3px;
+
+                display: inline-flex;
+
+                padding: 4px 11px !important;
+            }
+
+
+            .about-hero {
+
+                min-height: 450px;
+            }
+
+
+            .about-hero-content {
+
+                padding: 70px 20px;
+            }
+
+
+            .about-hero-title {
+
+                font-size: 48px;
+            }
+
+
+            .about-section {
+
+                padding: 70px 0;
+            }
+
+
+            .about-image {
+
+                height: 350px;
+
+                margin-bottom: 20px;
+            }
+
+
+            .chamber-section {
+
+                padding: 8px 0 !important;
+            }
+
+
+            .chamber-logo {
+
+                width: 115px !important;
+
+                margin-bottom: 2px !important;
+            }
+
+
+            .chamber-section p {
+
+                font-size: 11px;
+
+                line-height: 1.15;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 576px) {
+
+            .dss-header {
+
+                min-height: 160px;
+
+                padding: 28px 15px 32px;
+
+                background-size: 100% 100%;
+            }
+
+
+            .header-upper {
+
+                font-size: 11px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .header-lower {
+
+                font-size: 28px;
+            }
+
+
+            .header-tagline {
+
+                font-size: 13px;
+            }
+
+
+            #mainNav {
+
+                padding: 1.4px 0 !important;
+
+                min-height: 25px;
+            }
+
+
+            #mainNav .container {
+
+                min-height: 25px;
+            }
+
+
+            #mainNav .dss-logo {
+
+                width: 85px !important;
+
+                min-width: 85px !important;
+
+                max-width: 85px !important;
+
+                height: auto !important;
+            }
+
+
+            #mainNav .navbar-toggler {
+
+                padding: 1px 4px;
+
+                line-height: 1;
+            }
+
+
+            #mainNav .navbar-toggler-icon {
+
+                width: 1em;
+
+                height: 1em;
+            }
+
+
+            #mainNav .nav-link {
+
+                padding: 2.5px 7px !important;
+
+                font-size: 11px;
+
+                line-height: 1.1;
+            }
+
+
+            #mainNav .nav-support {
+
+                padding: 3px 10px !important;
+
+                margin-top: 2px;
+            }
+
+
+            .about-hero {
+
+                min-height: 500px;
+            }
+
+
+            .about-hero-content {
+
+                padding: 60px 20px;
+            }
+
+
+            .about-hero-title {
+
+                font-size: 39px;
+            }
+
+
+            .about-hero-text {
+
+                font-size: 16px;
+            }
+
+
+            .about-section {
+
+                padding: 60px 0;
+            }
+
+
+            .about-image {
+
+                height: 280px;
+            }
+
+
+            .section-title {
+
+                font-size: 34px;
+            }
+
+
+            .commitment-card,
+            .contact-card {
+
+                padding: 30px;
+            }
+
+
+            .footer-logo {
+
+                width: 170px !important;
+            }
+
+
+            .chamber-section {
+
+                padding: 7px 8px !important;
+            }
+
+
+            .chamber-logo {
+
+                width: 105px !important;
+
+                margin-bottom: 2px !important;
+            }
+
+
+            .chamber-section p {
+
+                font-size: 10px;
+
+                line-height: 1.15;
+            }
+
+
+            #backToTop {
+
+                right: 15px;
+
+                bottom: 15px;
+            }
+
+        }
+
+
+        /* =====================================================
+           FINAL CHAMBER SAFETY OVERRIDES
+        ====================================================== */
+
+        .chamber-section {
+
+            padding-top: 9px !important;
+
+            padding-bottom: 9px !important;
+        }
+
+
+        .chamber-section .container {
+
+            padding-top: 0 !important;
+
+            padding-bottom: 0 !important;
+        }
+
+
+        .chamber-section .chamber-logo {
+
+            display: block !important;
+
+            width: 120px !important;
+
+            height: auto !important;
+
+            margin: 0 auto 2px !important;
+        }
+
+
+        .chamber-section p {
+
+            margin-top: 0 !important;
+
+            margin-bottom: 0 !important;
+
+            padding: 0 !important;
+        }
+
+
+        @media (max-width: 991px) {
+
+            .chamber-section {
+
+                padding-top: 8px !important;
+
+                padding-bottom: 8px !important;
+            }
+
+
+            .chamber-section .chamber-logo {
+
+                width: 115px !important;
+            }
+
+        }
+
+
+        @media (max-width: 576px) {
+
+            .chamber-section {
+
+                padding-top: 7px !important;
+
+                padding-bottom: 7px !important;
+            }
+
+
+            .chamber-section .chamber-logo {
+
+                width: 105px !important;
+            }
+
+        }
+    </style>
+
 </head>
 
+
 <body>
-    <header>
-        <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-upper text-primary mb-3">One Stop For All Your IT Needs</span>
-            <span class="site-heading-lower">Data Safe Systems LLC</span>
-            <br>
-            <br>
-            <img src="assets/img/ICON.JPG" alt="Proud memeber of the East Pasco Chamber of Commerce" width="200"
-                height="200">
-        </h1>
+
+
+    <!-- =====================================================
+         WEBSITE HEADER
+    ====================================================== -->
+
+    <header class="dss-header">
+
+        <div class="header-content">
+
+            <div class="header-upper">
+                One Stop For All Your IT Needs
+            </div>
+
+            <div class="header-lower">
+                Data Safe Systems
+            </div>
+
+            <div class="header-tagline">
+                Professional IT Support • Security • Technology Solutions
+            </div>
+
+        </div>
+
     </header>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+
+
+    <!-- =====================================================
+         MAIN NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+
         <div class="container">
-            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">DSSLLC</a>
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="./assets/img/ICON.JPG" alt="Data Safe Systems LLC" class="dss-logo" loading="eager">
+
+            </a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Services</a>
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+                            HOME
+                        </a>
+
                     </li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Contact</a></li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="about.html">
+                            ABOUT
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="products.html">
+                            SERVICES
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="store.html">
+                            CONTACT
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link nav-support" href="store.html">
+
+                            GET SUPPORT
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </li>
+
                 </ul>
+
             </div>
-        </div>
-    </nav>
-    <section class="page-section about-heading">
-        <div class="container">
-            <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
-            <div class="about-heading-content">
-                <div class="row">
-                    <div class="col-xl-9 col-lg-10 mx-auto">
-                        <div class="bg-faded rounded p-5">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper">Your IT, Our Expertise / Unlocking IT
-                                    Potential</span>
-                                <span class="section-heading-lower">Our Service to You</span>
-                            </h2>
-                            <p>Our pledge to you the customer is commitment to providing exceptional service and
-                                building strong relationships to help with your needs
-                                related to the product or service that you have chosen. It encompasses everything from
-                                addressing inquiries and
-                                resolving issues to providing guidance and ensuring a positive experience with Data Safe
-                                Systems. Our custom services
-                                focuses on building relationships, understanding customer needs, and delivering
-                                personalized experiences that go beyond
-                                basic transactions.</p>
-                            <p class="mb-0">
-                                We guarantee that you will be satisfied.
-                                <em></em>
-                                Only those who value self-knowledge over self-satisfaction can achieve wisdom, only
-                                those who value self-perfection over
-                                "self-fulfilment" can retain dignity, and only those who value self-discipline over
-                                self-indulgence can enjoy liberty.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer text-faded text-center py-5">
-        <div class="container">
-            <p class="m-0 small">Copyright &copy; DSSLLC Website 2025</p>
-            <img src="assets/img/EPChamber.jpg" alt="Proud memeber of the East Pasco Chamber of Commerce" width="200"
-                height="100">
-            <p class="m-0 small">Proud member of the Greater East Pasco Chamber of Commerce</p>
 
         </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         ABOUT HERO
+    ====================================================== -->
+
+    <section class="about-hero">
+
+        <div class="container">
+
+            <div class="about-hero-content">
+
+                <div class="about-kicker">
+                    About Data Safe Systems
+                </div>
+
+
+                <h1 class="about-hero-title">
+
+                    Your IT.
+
+                    <br>
+
+                    <span>Our Expertise.</span>
+
+                </h1>
+
+
+                <p class="about-hero-text">
+
+                    Unlocking IT potential through professional,
+                    reliable, secure, and personalized technology
+                    solutions designed around your needs.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT CONTENT
+    ====================================================== -->
+
+    <section class="about-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- IMAGE -->
+
+                <div class="col-lg-6">
+
+                    <img src="./assets/img/about.jpg" class="about-image" alt="Data Safe Systems IT services"
+                        loading="lazy">
+
+                </div>
+
+
+                <!-- CONTENT -->
+
+                <div class="col-lg-6">
+
+                    <div class="section-kicker">
+                        Your IT, Our Expertise
+                    </div>
+
+
+                    <h2 class="section-title">
+
+                        Our <span>Service To You</span>
+
+                    </h2>
+
+
+                    <p class="section-text">
+
+                        Our pledge to you, the customer, is a commitment
+                        to providing exceptional service and building
+                        strong relationships to help with your technology
+                        needs.
+
+                    </p>
+
+
+                    <p class="section-text">
+
+                        Our services encompass everything from addressing
+                        inquiries and resolving issues to providing
+                        guidance and ensuring a positive experience with
+                        Data Safe Systems.
+
+                    </p>
+
+
+                    <ul class="check-list">
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Exceptional customer service
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Personalized technology solutions
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Professional IT guidance and support
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Strong customer relationships
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            Reliable and practical technology solutions
+                        </li>
+
+                    </ul>
+
+
+                    <a href="store.html" class="btn-dss">
+
+                        Contact Us
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CUSTOMER COMMITMENT
+    ====================================================== -->
+
+    <section class="commitment-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-8">
+
+                    <div class="commitment-card">
+
+                        <div class="section-kicker">
+                            Our Commitment
+                        </div>
+
+
+                        <h2>
+                            Dedicated To Your Success
+                        </h2>
+
+
+                        <p>
+
+                            Our custom services focus on building
+                            relationships, understanding customer
+                            needs, and delivering personalized
+                            experiences that go beyond basic
+                            transactions.
+
+                        </p>
+
+
+                        <p>
+
+                            We believe technology should work for you,
+                            not against you. That means providing
+                            solutions that are practical, dependable,
+                            secure, and designed around your individual
+                            requirements.
+
+                        </p>
+
+
+                        <p class="mb-0">
+
+                            <span class="commitment-highlight">
+                                Your Satisfaction Is Our Priority.
+                            </span>
+
+                            We are committed to delivering quality
+                            service and technology solutions you can
+                            depend on.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="contact-card d-flex flex-column justify-content-center">
+
+                        <div class="section-kicker">
+                            Get Started
+                        </div>
+
+
+                        <h3>
+                            Need IT Help?
+                        </h3>
+
+
+                        <p class="text-muted">
+
+                            Let Data Safe Systems help you find
+                            the right technology solution for your
+                            home or business.
+
+                        </p>
+
+
+                        <a href="store.html" class="btn-dss">
+
+                            Contact Us
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHAMBER OF COMMERCE
+    ====================================================== -->
+
+    <section class="chamber-section">
+
+        <div class="container">
+
+            <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce"
+                loading="lazy">
+
+
+            <p>
+                Proud member of the Greater East Pasco Chamber of Commerce
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-5">
+
+                    <img src="./assets/img/ICON.JPG" class="footer-logo" alt="Data Safe Systems LLC" loading="lazy">
+
+
+                    <p>
+
+                        Providing innovative IT solutions with a
+                        commitment to security, reliability,
+                        and exceptional customer service.
+
+                    </p>
+
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="products.html">
+                                Services
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="store.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4">
+
+                    <h5>
+                        Our Services
+                    </h5>
+
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="products.html">
+                                Network Security
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="products.html">
+                                IT Support & Helpdesk
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="products.html">
+                                Cloud Solutions
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="products.html">
+                                Data Backup & Recovery
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="products.html">
+                                IT Consulting
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-divider"></div>
+
+
+            <div class="d-flex flex-column flex-md-row
+                        justify-content-between
+                        align-items-center
+                        gap-3">
+
+
+                <div class="">
+
+                    <span id=""></span>
+
+                    2025 Copyright &copy;
+
+                    Data Safe Systems.
+
+                    All Rights Reserved.
+
+                </div>
+
+
+                <div class="copyright">
+
+                    One Stop For All Your IT Needs
+
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
-    <!-- Bootstrap core JS-->
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button id="backToTop" type="button" aria-label="Return to top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+    ====================================================== -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
+
+    <!-- =====================================================
+         EXISTING JAVASCRIPT
+    ====================================================== -->
+
     <script src="js/scripts.js"></script>
 
-    <center><button class="BackToTheTop" onclick="Return()">Return To Top!</button></center>
+
+    <!-- =====================================================
+         PAGE JAVASCRIPT
+    ====================================================== -->
+
     <script>
-        function Return() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            /* =================================================
+               COPYRIGHT YEAR
+            ================================================== */
+
+            const currentYear =
+                document.getElementById("currentYear");
+
+
+            if (currentYear) {
+
+                currentYear.textContent =
+                    new Date().getFullYear();
+
+            }
+
+
+            /* =================================================
+               BACK TO TOP
+            ================================================== */
+
+            const backToTop =
+                document.getElementById("backToTop");
+
+
+            if (backToTop) {
+
+
+                function updateBackToTop() {
+
+                    if (window.scrollY > 300) {
+
+                        backToTop.style.display = "flex";
+
+                    } else {
+
+                        backToTop.style.display = "none";
+
+                    }
+
+                }
+
+
+                window.addEventListener(
+                    "scroll",
+                    updateBackToTop,
+                    { passive: true }
+                );
+
+
+                backToTop.addEventListener(
+                    "click",
+                    function () {
+
+                        window.scrollTo({
+
+                            top: 0,
+
+                            behavior: "smooth"
+
+                        });
+
+                    }
+                );
+
+
+                updateBackToTop();
+
+            }
+
+        });
+
     </script>
 
-</body>
+
 </body>
 
 </html>
+```

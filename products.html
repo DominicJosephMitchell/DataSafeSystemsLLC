@@ -2,172 +2,2391 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Data Safe Systems LLC</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Google fonts-->
-    <link
-        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Data Safe Systems LLC - Professional IT services including network solutions, data security, data center decommissioning, managed services, backup, recovery, and IT support.">
+
+    <meta name="author" content="Data Safe Systems LLC">
+
+    <title>Services | Data Safe Systems</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- EXISTING CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <style>
+        /* =====================================================
+           COLORS
+        ====================================================== */
+
+        :root {
+
+            --burgundy: #800020;
+            --burgundy-dark: #5c0018;
+            --burgundy-light: #a52a45;
+
+            --navy: #071a2d;
+            --navy-light: #0d2d4b;
+
+            --light-bg: #f8f5f6;
+
+            --text-dark: #172033;
+            --text-gray: #5f6b7a;
+
+            --white: #ffffff;
+        }
+
+
+        /* =====================================================
+           GENERAL
+        ====================================================== */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            margin: 0;
+
+            font-family: "Raleway", Arial, sans-serif;
+
+            color: var(--text-dark);
+
+            background: #ffffff;
+        }
+
+
+        /* =====================================================
+           WEBSITE HEADER
+           SAME STYLE AS SCRIPT 1
+           COMPLETE bg.jpg FIT
+        ====================================================== */
+
+        .dss-header {
+
+            position: relative;
+
+            width: 100%;
+
+            min-height: 190px;
+
+            padding: 38px 20px 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            overflow: hidden;
+
+            background-color: #071a2d;
+
+            background-image: url("assets/img/bg.jpg");
+
+            background-position: center center;
+
+            background-size: 100% 100%;
+
+            background-repeat: no-repeat;
+
+            color: #ffffff;
+        }
+
+
+        /* =====================================================
+           HEADER OVERLAY
+        ====================================================== */
+
+        .dss-header::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(3, 19, 33, 0.62) 0%,
+                    rgba(7, 26, 45, 0.40) 50%,
+                    rgba(92, 0, 24, 0.56) 100%);
+
+            z-index: 0;
+
+            pointer-events: none;
+        }
+
+
+        /* =====================================================
+           HEADER DECORATIVE CIRCLE
+        ====================================================== */
+
+        .dss-header::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 420px;
+
+            height: 420px;
+
+            border-radius: 50%;
+
+            border: 1px solid rgba(255, 255, 255, 0.14);
+
+            right: -180px;
+
+            top: -220px;
+
+            z-index: 1;
+
+            pointer-events: none;
+        }
+
+
+        /* =====================================================
+           HEADER CONTENT
+        ====================================================== */
+
+        .header-content {
+
+            position: relative;
+
+            z-index: 2;
+
+            width: 100%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+        }
+
+
+        .header-upper {
+
+            display: block;
+
+            color: #f0bdc9;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 6px;
+
+            text-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.40);
+        }
+
+
+        .header-lower {
+
+            display: block;
+
+            color: #ffffff;
+
+            font-size: 42px;
+
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            text-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.50);
+        }
+
+
+        .header-tagline {
+
+            color: #f0f3f6;
+
+            font-size: 16px;
+
+            margin-top: 10px;
+
+            text-shadow:
+                0 2px 5px rgba(0, 0, 0, 0.45);
+        }
+
+
+        /* =====================================================
+           MAIN NAVIGATION
+           SAME COMPACT NAVIGATION AS SCRIPT 1
+        ====================================================== */
+
+        #mainNav {
+
+            background: #ffffff !important;
+
+            box-shadow:
+                0 3px 18px rgba(0, 0, 0, 0.10);
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1030;
+
+            padding: 1.7px 0 !important;
+
+            min-height: 26px;
+        }
+
+
+        #mainNav .container {
+
+            min-height: 26px;
+        }
+
+
+        /* =====================================================
+           NAVIGATION LOGO
+        ====================================================== */
+
+        #mainNav .navbar-brand {
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            justify-content: flex-start !important;
+
+            padding: 0 !important;
+
+            margin: 0 !important;
+
+            text-decoration: none !important;
+
+            flex-shrink: 0;
+        }
+
+
+        #mainNav .dss-logo {
+
+            display: block !important;
+
+            width: 92px !important;
+
+            height: auto !important;
+
+            max-width: 92px !important;
+
+            min-width: 92px !important;
+
+            object-fit: contain !important;
+
+            visibility: visible !important;
+
+            opacity: 1 !important;
+        }
+
+
+        /* =====================================================
+           NAVIGATION LINKS
+        ====================================================== */
+
+        #mainNav .navbar-nav {
+
+            align-items: center;
+        }
+
+
+        #mainNav .nav-link {
+
+            color: #1a1a1a !important;
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 0.5px;
+
+            padding: 3px 12px !important;
+
+            position: relative;
+
+            line-height: 1.15;
+
+            transition: all 0.25s ease;
+        }
+
+
+        #mainNav .nav-link:hover {
+
+            color: var(--burgundy) !important;
+        }
+
+
+        #mainNav .nav-link.active {
+
+            color: var(--burgundy) !important;
+        }
+
+
+        #mainNav .nav-link.active::after {
+
+            content: "";
+
+            position: absolute;
+
+            height: 2px;
+
+            left: 12px;
+
+            right: 12px;
+
+            bottom: 0;
+
+            background: var(--burgundy);
+
+            border-radius: 3px;
+        }
+
+
+        /* =====================================================
+           SUPPORT BUTTON
+        ====================================================== */
+
+        #mainNav .nav-support {
+
+            background: var(--burgundy);
+
+            color: #ffffff !important;
+
+            border-radius: 4px;
+
+            margin-left: 4px;
+
+            padding: 3px 11px !important;
+
+            line-height: 1.15;
+        }
+
+
+        #mainNav .nav-support:hover {
+
+            background: var(--burgundy-dark);
+
+            color: #ffffff !important;
+        }
+
+
+        #mainNav .nav-support::after {
+
+            display: none;
+        }
+
+
+        /* =====================================================
+           MOBILE MENU
+        ====================================================== */
+
+        #mainNav .navbar-toggler {
+
+            border: 1px solid #cccccc !important;
+
+            padding: 2px 5px;
+
+            line-height: 1;
+        }
+
+
+        #mainNav .navbar-toggler:focus {
+
+            box-shadow:
+                0 0 0 3px rgba(128, 0, 32, 0.15) !important;
+        }
+
+
+        #mainNav .navbar-toggler-icon {
+
+            width: 1em;
+
+            height: 1em;
+        }
+
+
+        /* =====================================================
+           SERVICES HERO
+        ====================================================== */
+
+        .services-hero {
+
+            position: relative;
+
+            min-height: 500px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(5, 20, 35, 0.95) 0%,
+                    rgba(5, 20, 35, 0.84) 45%,
+                    rgba(5, 20, 35, 0.48) 100%),
+                url("assets/img/products-01.jpg") center center / cover no-repeat;
+        }
+
+
+        .services-hero-content {
+
+            max-width: 800px;
+
+            padding: 80px 0;
+
+            color: #ffffff;
+        }
+
+
+        .services-kicker {
+
+            color: #d9a1af;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
+
+
+        .services-hero-title {
+
+            font-size: 56px;
+
+            line-height: 1.08;
+
+            font-weight: 900;
+
+            margin-bottom: 25px;
+        }
+
+
+        .services-hero-title span {
+
+            color: var(--burgundy-light);
+        }
+
+
+        .services-hero-text {
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: rgba(255, 255, 255, 0.90);
+
+            max-width: 700px;
+
+            margin-bottom: 0;
+        }
+
+
+        /* =====================================================
+           SERVICES SECTIONS
+        ====================================================== */
+
+        .service-section {
+
+            padding: 90px 0;
+
+            background: #ffffff;
+        }
+
+
+        .service-section:nth-of-type(even) {
+
+            background: var(--light-bg);
+        }
+
+
+        .service-image {
+
+            width: 100%;
+
+            height: 430px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+
+        .service-content {
+
+            padding: 20px 0;
+        }
+
+
+        .section-kicker {
+
+            color: var(--burgundy);
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+
+        .section-title {
+
+            color: var(--navy);
+
+            font-size: 42px;
+
+            line-height: 1.15;
+
+            font-weight: 900;
+
+            margin-bottom: 22px;
+        }
+
+
+        .section-title span {
+
+            color: var(--burgundy);
+        }
+
+
+        .section-text {
+
+            color: var(--text-gray);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =====================================================
+           SERVICE NUMBER
+        ====================================================== */
+
+        .service-number {
+
+            width: 58px;
+
+            height: 58px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            font-size: 22px;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 8px 20px rgba(92, 0, 24, 0.20);
+        }
+
+
+        /* =====================================================
+           SERVICE HIGHLIGHT
+        ====================================================== */
+
+        .service-highlight {
+
+            background: #ffffff;
+
+            border-left: 5px solid var(--burgundy);
+
+            border-radius: 8px;
+
+            padding: 20px 25px;
+
+            margin-top: 25px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .service-highlight p {
+
+            color: var(--text-gray);
+
+            line-height: 1.7;
+
+            margin: 0;
+        }
+
+
+        /* =====================================================
+           SERVICE LIST
+        ====================================================== */
+
+        .service-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 25px 0;
+        }
+
+
+        .service-list li {
+
+            color: #26364a;
+
+            font-weight: 600;
+
+            margin-bottom: 13px;
+        }
+
+
+        .service-list i {
+
+            color: var(--burgundy);
+
+            margin-right: 10px;
+        }
+
+
+        /* =====================================================
+           SERVICE BUTTON
+        ====================================================== */
+
+        .btn-dss {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 10px;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            border: 2px solid var(--burgundy);
+
+            border-radius: 6px;
+
+            padding: 13px 25px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+        }
+
+
+        .btn-dss:hover {
+
+            background: var(--burgundy-dark);
+
+            border-color: var(--burgundy-dark);
+
+            color: #ffffff;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* =====================================================
+           WHY DSS
+        ====================================================== */
+
+        .why-dss-section {
+
+            background:
+                linear-gradient(135deg,
+                    #06182b 0%,
+                    #2f0c17 100%);
+
+            color: #ffffff;
+
+            padding: 80px 0;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .why-dss-card {
+
+            height: 100%;
+
+            padding: 40px;
+
+            background: rgba(255, 255, 255, 0.06);
+
+            border:
+                1px solid rgba(255, 255, 255, 0.15);
+
+            border-radius: 12px;
+        }
+
+
+        .why-dss-card h2 {
+
+            font-size: 34px;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+        }
+
+
+        .why-dss-card p {
+
+            color: rgba(255, 255, 255, 0.85);
+
+            line-height: 1.8;
+        }
+
+
+        .why-highlight {
+
+            color: #d9a1af;
+
+            font-weight: 800;
+        }
+
+
+        /* =====================================================
+           CONTACT CARD
+        ====================================================== */
+
+        .contact-card {
+
+            height: 100%;
+
+            padding: 40px;
+
+            background: #ffffff;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.16);
+        }
+
+
+        .contact-card h3 {
+
+            color: var(--navy);
+
+            font-size: 28px;
+
+            font-weight: 900;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =====================================================
+           CHAMBER OF COMMERCE
+        ====================================================== */
+
+        .chamber-section {
+
+            padding: 9px 0 !important;
+
+            background: #ffffff;
+
+            text-align: center;
+
+            line-height: 1;
+        }
+
+
+        .chamber-section .container {
+
+            padding-top: 0 !important;
+
+            padding-bottom: 0 !important;
+        }
+
+
+        .chamber-logo {
+
+            display: block;
+
+            width: 120px !important;
+
+            max-width: 100%;
+
+            height: auto;
+
+            margin: 0 auto 2px !important;
+        }
+
+
+        .chamber-section p {
+
+            color: var(--text-gray);
+
+            margin: 0 !important;
+
+            padding: 0 !important;
+
+            font-size: 12px;
+
+            line-height: 1.2;
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ====================================================== */
+
+        .footer {
+
+            background: #031321;
+
+            color: #ffffff;
+
+            padding: 55px 0 25px;
+        }
+
+
+        .footer-logo {
+
+            width: 200px !important;
+
+            height: auto !important;
+
+            max-width: 100% !important;
+
+            display: block !important;
+
+            margin-bottom: 18px;
+
+            object-fit: contain !important;
+        }
+
+
+        .footer p {
+
+            color: #aebdcc;
+
+            line-height: 1.7;
+        }
+
+
+        .footer h5 {
+
+            color: #ffffff;
+
+            font-size: 17px;
+
+            font-weight: 800;
+
+            margin-bottom: 20px;
+        }
+
+
+        .footer-links {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 0;
+        }
+
+
+        .footer-links li {
+
+            margin-bottom: 10px;
+        }
+
+
+        .footer-links a {
+
+            color: #aebdcc;
+
+            text-decoration: none;
+
+            transition: all 0.25s ease;
+        }
+
+
+        .footer-links a:hover {
+
+            color: #d9a1af;
+
+            padding-left: 4px;
+        }
+
+
+        .footer-divider {
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.10);
+
+            margin: 35px 0 20px;
+        }
+
+
+        .copyright {
+
+            color: #8494a6;
+
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           BACK TO TOP
+        ====================================================== */
+
+        #backToTop {
+
+            position: fixed;
+
+            right: 25px;
+
+            bottom: 25px;
+
+            width: 48px;
+
+            height: 48px;
+
+            border: none;
+
+            border-radius: 6px;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            display: none;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 20px;
+
+            z-index: 9999;
+
+            box-shadow:
+                0 8px 20px rgba(92, 0, 24, 0.30);
+
+            transition: all 0.25s ease;
+        }
+
+
+        #backToTop:hover {
+
+            background: var(--burgundy-dark);
+
+            transform: translateY(-3px);
+        }
+
+
+        /* =====================================================
+           TABLET
+        ====================================================== */
+
+        @media (max-width: 991px) {
+
+            .dss-header {
+
+                min-height: 175px;
+
+                padding: 32px 20px 36px;
+
+                background-size: 100% 100%;
+            }
+
+
+            .header-lower {
+
+                font-size: 34px;
+            }
+
+
+            #mainNav {
+
+                padding: 1.7px 0 !important;
+
+                min-height: 26px;
+            }
+
+
+            #mainNav .container {
+
+                min-height: 26px;
+            }
+
+
+            #mainNav .navbar-nav {
+
+                align-items: flex-start;
+
+                padding-top: 4px;
+
+                width: 100%;
+            }
+
+
+            #mainNav .nav-link {
+
+                padding: 4px 8px !important;
+            }
+
+
+            #mainNav .nav-support {
+
+                margin-left: 0;
+
+                margin-top: 3px;
+
+                display: inline-flex;
+
+                padding: 4px 11px !important;
+            }
+
+
+            .services-hero {
+
+                min-height: 450px;
+            }
+
+
+            .services-hero-content {
+
+                padding: 70px 20px;
+            }
+
+
+            .services-hero-title {
+
+                font-size: 48px;
+            }
+
+
+            .service-section {
+
+                padding: 70px 0;
+            }
+
+
+            .service-image {
+
+                height: 350px;
+
+                margin-bottom: 20px;
+            }
+
+
+            .chamber-section {
+
+                padding: 8px 0 !important;
+            }
+
+
+            .chamber-logo {
+
+                width: 115px !important;
+
+                margin-bottom: 2px !important;
+            }
+
+
+            .chamber-section p {
+
+                font-size: 11px;
+
+                line-height: 1.15;
+            }
+
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ====================================================== */
+
+        @media (max-width: 576px) {
+
+            .dss-header {
+
+                min-height: 160px;
+
+                padding: 28px 15px 32px;
+
+                background-size: 100% 100%;
+            }
+
+
+            .header-upper {
+
+                font-size: 11px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .header-lower {
+
+                font-size: 28px;
+            }
+
+
+            .header-tagline {
+
+                font-size: 13px;
+            }
+
+
+            #mainNav {
+
+                padding: 1.4px 0 !important;
+
+                min-height: 25px;
+            }
+
+
+            #mainNav .container {
+
+                min-height: 25px;
+            }
+
+
+            #mainNav .dss-logo {
+
+                width: 85px !important;
+
+                min-width: 85px !important;
+
+                max-width: 85px !important;
+
+                height: auto !important;
+            }
+
+
+            #mainNav .navbar-toggler {
+
+                padding: 1px 4px;
+
+                line-height: 1;
+            }
+
+
+            #mainNav .navbar-toggler-icon {
+
+                width: 1em;
+
+                height: 1em;
+            }
+
+
+            #mainNav .nav-link {
+
+                padding: 2.5px 7px !important;
+
+                font-size: 11px;
+
+                line-height: 1.1;
+            }
+
+
+            #mainNav .nav-support {
+
+                padding: 3px 10px !important;
+
+                margin-top: 2px;
+            }
+
+
+            .services-hero {
+
+                min-height: 500px;
+            }
+
+
+            .services-hero-content {
+
+                padding: 60px 20px;
+            }
+
+
+            .services-hero-title {
+
+                font-size: 39px;
+            }
+
+
+            .services-hero-text {
+
+                font-size: 16px;
+            }
+
+
+            .service-section {
+
+                padding: 60px 0;
+            }
+
+
+            .service-image {
+
+                height: 280px;
+            }
+
+
+            .section-title {
+
+                font-size: 34px;
+            }
+
+
+            .why-dss-card,
+            .contact-card {
+
+                padding: 30px;
+            }
+
+
+            .footer-logo {
+
+                width: 170px !important;
+            }
+
+
+            .chamber-section {
+
+                padding: 7px 8px !important;
+            }
+
+
+            .chamber-logo {
+
+                width: 105px !important;
+
+                margin-bottom: 2px !important;
+            }
+
+
+            .chamber-section p {
+
+                font-size: 10px;
+
+                line-height: 1.15;
+            }
+
+
+            #backToTop {
+
+                right: 15px;
+
+                bottom: 15px;
+            }
+
+        }
+
+
+        /* =====================================================
+           FINAL CHAMBER SAFETY OVERRIDES
+        ====================================================== */
+
+        .chamber-section {
+
+            padding-top: 9px !important;
+
+            padding-bottom: 9px !important;
+        }
+
+
+        .chamber-section .container {
+
+            padding-top: 0 !important;
+
+            padding-bottom: 0 !important;
+        }
+
+
+        .chamber-section .chamber-logo {
+
+            display: block !important;
+
+            width: 120px !important;
+
+            height: auto !important;
+
+            margin: 0 auto 2px !important;
+        }
+
+
+        .chamber-section p {
+
+            margin-top: 0 !important;
+
+            margin-bottom: 0 !important;
+
+            padding: 0 !important;
+        }
+
+
+        @media (max-width: 991px) {
+
+            .chamber-section {
+
+                padding-top: 8px !important;
+
+                padding-bottom: 8px !important;
+            }
+
+
+            .chamber-section .chamber-logo {
+
+                width: 115px !important;
+            }
+
+        }
+
+
+        @media (max-width: 576px) {
+
+            .chamber-section {
+
+                padding-top: 7px !important;
+
+                padding-bottom: 7px !important;
+            }
+
+
+            .chamber-section .chamber-logo {
+
+                width: 105px !important;
+            }
+
+        }
+    </style>
+
 </head>
 
+
 <body>
-    <header>
-        <h1 class="site-heading text-center text-faded d-none d-lg-block">
-            <span class="site-heading-upper text-primary mb-3">One Stop For All Your IT Needs</span>
-            <span class="site-heading-lower">Data Safe Systems LLC</span>
-            <br>
-            <br>
-            <img src="assets/img/ICON.JPG" alt="Proud memeber of the East Pasco Chamber of Commerce" width="200"
-                height="200">
-        </h1>
+
+
+    <!-- =====================================================
+         WEBSITE HEADER
+    ====================================================== -->
+
+    <header class="dss-header">
+
+        <div class="header-content">
+
+            <div class="header-upper">
+                One Stop For All Your IT Needs
+            </div>
+
+
+            <div class="header-lower">
+                Data Safe Systems
+            </div>
+
+
+            <div class="header-tagline">
+                Professional IT Support • Security • Technology Solutions
+            </div>
+
+        </div>
+
     </header>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+
+
+    <!-- =====================================================
+         MAIN NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+
         <div class="container">
-            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">DSSLLC</a>
+
+
+            <a class="navbar-brand" href="index.html">
+
+                <img src="./assets/img/ICON.JPG" alt="Data Safe Systems LLC" class="dss-logo" loading="eager">
+
+            </a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">About</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Services</a>
+
+                <ul class="navbar-nav ms-auto">
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="index.html">
+
+                            HOME
+
+                        </a>
+
                     </li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Contact</a></li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="about.html">
+
+                            ABOUT
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="products.html">
+
+                            SERVICES
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="store.html">
+
+                            CONTACT
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link nav-support" href="store.html">
+
+                            GET SUPPORT
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </nav>
-    <section class="page-section">
+
+
+    <!-- =====================================================
+         SERVICES HERO
+    ====================================================== -->
+
+    <section class="services-hero">
+
         <div class="container">
-            <div class="product-item">
-                <div class="product-item-title d-flex">
-                    <div class="bg-faded p-5 d-flex ms-auto rounded">
-                        <h2 class="section-heading mb-0">
-                            <span class="section-heading-upper">Tech Solutions, Redefined</span>
-                            <span class="section-heading-lower">Delivering Tomorrow's Tech, Today</span>
-                        </h2>
-                    </div>
+
+            <div class="services-hero-content">
+
+
+                <div class="services-kicker">
+                    Information Technology
                 </div>
-                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-                    src="assets/img/products-01.jpg" alt="..." />
-                <div class="product-item-description d-flex me-auto">
-                    <div class="bg-faded p-5 rounded">
-                        <p class="mb-0">A company's network serves as the vital core of the business and it is the very
-                            foundation of the company’s success: a
-                            partner who fully comprehends the significance of the building/rebuilding of a network,
-                            relocation, migration process, and
-                            comprehensive data backup. This is a complex undertaking that should not be entrusted to the
-                            inexperienced. We provide professional
-                            installation tech services, and meticulous planning before, during, and after the
-                            relocation. We pride ourselves on
-                            going above and beyond the project scope, acting as an extension of your organization's team
-                            rather than just a vendor.</p>
-                    </div>
-                </div>
+
+
+                <h1 class="services-hero-title">
+
+                    Technology Solutions.
+
+                    <br>
+
+                    <span>Redefined.</span>
+
+                </h1>
+
+
+                <p class="services-hero-text">
+
+                    Professional IT services designed to keep
+                    your technology secure, reliable, connected,
+                    and working for your organization.
+
+                </p>
+
             </div>
+
         </div>
+
     </section>
-    <section class="page-section">
+
+
+    <!-- =====================================================
+         SERVICE 1
+         NETWORK SOLUTIONS
+    ====================================================== -->
+
+    <section class="service-section">
+
         <div class="container">
-            <div class="product-item">
-                <div class="product-item-title d-flex">
-                    <div class="bg-faded p-5 d-flex me-auto rounded">
-                        <h2 class="section-heading mb-0">
-                            <span class="section-heading-upper">Data Center Decommissioning</span>
-                            <span class="section-heading-lower">Data Security</span>
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <img src="./assets/img/products-01.jpg" class="service-image"
+                        alt="Professional network technology services" loading="lazy">
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="service-content">
+
+
+                        <div class="service-number">
+                            01
+                        </div>
+
+
+                        <div class="section-kicker">
+                            Tech Solutions, Redefined
+                        </div>
+
+
+                        <h2 class="section-title">
+
+                            Delivering <span>Tomorrow's Tech</span>,
+                            Today
+
                         </h2>
-                    </div>
-                </div>
-                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-                    src="assets/img/products-02.jpg" alt="..." />
-                <div class="product-item-description d-flex ms-auto">
-                    <div class="bg-faded p-5 rounded">
-                        <p class="mb-0">The process of decommissioning a data center, server rooms, and company
-                            office equipment entails securely disposing of the infrastructure to prevent any potential
-                            risks of unauthorized access to
-                            sensitive data. Given the paramount importance of data security, this task should never be
-                            underestimated. The scale of the
-                            data center infrastructure directly correlates with the seriousness with which it should be
-                            approached. DataSafeSystems is
-                            fully equipped to assist our clients in the decommissioning process: internal and external
-                            HHD and SSD destruction and
-                            the proper disposal of electronic equipment, cooling systems, and overall infrastructure.
-                            Our experienced teams of technicians
-                            possess extensive knowledge of the necessary precautions, government regulations, and
-                            industry-specific disposal methods, ensuring
-                            a secure and compliant decommissioning process.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="page-section">
-        <div class="container">
-            <div class="product-item">
-                <div class="product-item-title d-flex">
-                    <div class="bg-faded p-5 d-flex ms-auto rounded">
-                        <h2 class="section-heading mb-0">
-                            <span class="section-heading-upper">All Phases of Network Support</span>
-                            <span class="section-heading-lower">Managed Services</span>
-                        </h2>
-                    </div>
-                </div>
-                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
-                    src="assets/img/products-03.jpg" alt="..." />
-                <div class="product-item-description d-flex me-auto">
-                    <div class="bg-faded p-5 rounded">
-                        <p class="mb-0">Delegate your company's various IT tasks to DSSLLC , including network
-                            management,
-                            security, data backup, data recovery and help desk support. We will monitor IT systems,
-                            identify potential issues, and implement
-                            preventative measures to ensure optimal performance and minimize downtime. By offloading IT
-                            responsibilities, your company can
-                            concentrate on their core business operations and strategic initiatives. Managed services
-                            are delivered under a Service Level Agreement (SLA),
-                            which outlines the expected performance and response times for the services selected.
-                            Proactive monitoring and maintenance can minimize downtime
-                            and improve overall IT system performance. Companies can leverage the knowledge and
-                            experience of our DSSLLC IT professionals without hiring
-                            them directly.
+
+
+                        <p class="section-text">
+
+                            A company's network serves as the vital
+                            core of the business and it is the very
+                            foundation of the company's success.
+
                         </p>
+
+
+                        <p class="section-text">
+
+                            A partner who fully comprehends the
+                            significance of the building and
+                            rebuilding of a network, relocation,
+                            migration process, and comprehensive
+                            data backup is essential.
+
+                        </p>
+
+
+                        <div class="service-highlight">
+
+                            <p>
+
+                                We provide professional installation
+                                tech services and meticulous planning
+                                before, during, and after relocation.
+                                We pride ourselves on going above and
+                                beyond the project scope, acting as an
+                                extension of your organization's team
+                                rather than just a vendor.
+
+                            </p>
+
+                        </div>
+
+
+                        <br>
+
+
+                        <a href="store.html" class="btn-dss">
+
+                            Get Support
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
-    <footer class="footer text-faded text-center py-5">
-        <div class="container">
-            <p class="m-0 small">Copyright &copy; DSSLLC Website 2025</p>
 
-            <img src="assets/img/EPChamber.jpg" alt="Proud memeber of the East Pasco Chamber of Commerce" width="200"
-                height="100">
-            <p class="m-0 small">Proud member of the Greater East Pasco Chamber of Commerce</p>
+
+    <!-- =====================================================
+         SERVICE 2
+         DATA CENTER DECOMMISSIONING
+    ====================================================== -->
+
+    <section class="service-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6 order-lg-2">
+
+                    <img src="./assets/img/products-02.jpg" class="service-image"
+                        alt="Data center decommissioning and data security" loading="lazy">
+
+                </div>
+
+
+                <div class="col-lg-6 order-lg-1">
+
+                    <div class="service-content">
+
+
+                        <div class="service-number">
+                            02
+                        </div>
+
+
+                        <div class="section-kicker">
+                            Data Center Decommissioning
+                        </div>
+
+
+                        <h2 class="section-title">
+
+                            <span>Data Security</span>
+                            You Can Trust
+
+                        </h2>
+
+
+                        <p class="section-text">
+
+                            The process of decommissioning a data
+                            center, server rooms, and company office
+                            equipment entails securely disposing of
+                            the infrastructure to prevent any potential
+                            risks of unauthorized access to sensitive
+                            data.
+
+                        </p>
+
+
+                        <p class="section-text">
+
+                            Given the paramount importance of data
+                            security, this task should never be
+                            underestimated. The scale of the data
+                            center infrastructure directly correlates
+                            with the seriousness with which it should
+                            be approached.
+
+                        </p>
+
+
+                        <ul class="service-list">
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Internal and external HDD and SSD
+                                destruction
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Secure electronic equipment disposal
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Cooling system and infrastructure
+                                disposal
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Secure and compliant decommissioning
+
+                            </li>
+
+                        </ul>
+
+
+                        <p class="section-text">
+
+                            Our experienced teams of technicians
+                            possess extensive knowledge of the
+                            necessary precautions, government
+                            regulations, and industry-specific
+                            disposal methods, ensuring a secure
+                            and compliant decommissioning process.
+
+                        </p>
+
+
+                        <a href="store.html" class="btn-dss">
+
+                            Contact Us
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICE 3
+         MANAGED SERVICES
+    ====================================================== -->
+
+    <section class="service-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <div class="col-lg-6">
+
+                    <img src="./assets/img/products-03.jpg" class="service-image"
+                        alt="Managed IT services and network support" loading="lazy">
+
+                </div>
+
+
+                <div class="col-lg-6">
+
+                    <div class="service-content">
+
+
+                        <div class="service-number">
+                            03
+                        </div>
+
+
+                        <div class="section-kicker">
+                            All Phases of Network Support
+                        </div>
+
+
+                        <h2 class="section-title">
+
+                            <span>Managed</span> Services
+
+                        </h2>
+
+
+                        <p class="section-text">
+
+                            Delegate your company's various IT tasks
+                            to DSS, including network management,
+                            security, data backup, data recovery,
+                            and help desk support.
+
+                        </p>
+
+
+                        <p class="section-text">
+
+                            We monitor IT systems, identify potential
+                            issues, and implement preventative measures
+                            to ensure optimal performance and minimize
+                            downtime.
+
+                        </p>
+
+
+                        <ul class="service-list">
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Network management
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Network security
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Data backup and recovery
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Help desk support
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Proactive monitoring and maintenance
+
+                            </li>
+
+
+                            <li>
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                Service Level Agreement support
+
+                            </li>
+
+                        </ul>
+
+
+                        <p class="section-text">
+
+                            By offloading IT responsibilities, your
+                            company can concentrate on core business
+                            operations and strategic initiatives.
+                            Managed services are delivered under a
+                            Service Level Agreement (SLA), which
+                            outlines the expected performance and
+                            response times for the services selected.
+
+                        </p>
+
+
+                        <p class="section-text">
+
+                            Companies can leverage the knowledge and
+                            experience of our DSS IT professionals
+                            without hiring them directly.
+
+                        </p>
+
+
+                        <a href="store.html" class="btn-dss">
+
+                            Get IT Support
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         WHY DATA SAFE SYSTEMS
+    ====================================================== -->
+
+    <section class="why-dss-section">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <div class="col-lg-8">
+
+                    <div class="why-dss-card">
+
+
+                        <div class="section-kicker">
+                            Why Data Safe Systems
+                        </div>
+
+
+                        <h2>
+                            Technology Built Around Your Needs
+                        </h2>
+
+
+                        <p>
+
+                            Your technology infrastructure deserves
+                            more than a basic vendor relationship.
+                            Data Safe Systems works as an extension
+                            of your team to provide dependable,
+                            professional, and security-focused IT
+                            solutions.
+
+                        </p>
+
+
+                        <p class="mb-0">
+
+                            <span class="why-highlight">
+                                Your Success Is Our Priority.
+                            </span>
+
+                            From network installations and migrations
+                            to data security and managed services,
+                            our goal is to help your organization
+                            operate confidently.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="contact-card d-flex flex-column justify-content-center">
+
+
+                        <div class="section-kicker">
+                            Get Started
+                        </div>
+
+
+                        <h3>
+                            Need IT Help?
+                        </h3>
+
+
+                        <p class="text-muted">
+
+                            Let Data Safe Systems help you
+                            find the right technology solution.
+
+                        </p>
+
+
+                        <a href="store.html" class="btn-dss">
+
+                            Contact Us
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CHAMBER OF COMMERCE
+    ====================================================== -->
+
+    <section class="chamber-section">
+
+        <div class="container">
+
+            <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce"
+                loading="lazy">
+
+
+            <p>
+                Proud member of the Greater East Pasco Chamber of Commerce
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+
+                <div class="col-lg-5">
+
+                    <img src="./assets/img/ICON.JPG" class="footer-logo" alt="Data Safe Systems LLC" loading="lazy">
+
+
+                    <p>
+
+                        Providing innovative IT solutions with a
+                        commitment to security, reliability,
+                        and exceptional customer service.
+
+                    </p>
+
+                </div>
+
+
+                <div class="col-sm-6 col-lg-3">
+
+                    <h5>
+                        Quick Links
+                    </h5>
+
+
+                    <ul class="footer-links">
+
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="products.html">
+                                Services
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="store.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-sm-6 col-lg-4">
+
+                    <h5>
+                        Our Services
+                    </h5>
+
+
+                    <ul class="footer-links">
+
+
+                        <li>
+
+                            <a href="products.html">
+                                Network Security
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="products.html">
+                                IT Support & Helpdesk
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="products.html">
+                                Cloud Solutions
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="products.html">
+                                Data Backup & Recovery
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a href="products.html">
+                                IT Consulting
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-divider"></div>
+
+
+            <div class="d-flex flex-column flex-md-row
+                        justify-content-between
+                        align-items-center
+                        gap-3">
+
+
+                <div class="copyright">
+
+                    <span id=""></span>
+
+                    2025 Copyright &copy;
+
+                    Data Safe Systems.
+
+                    All Rights Reserved.
+
+                </div>
+
+
+                <div class="copyright">
+
+                    One Stop For All Your IT Needs
+
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
-    <!-- Bootstrap core JS-->
+
+
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
+
+    <button id="backToTop" type="button" aria-label="Return to top">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </button>
+
+
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+    ====================================================== -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
+
+
+    <!-- =====================================================
+         EXISTING JAVASCRIPT
+    ====================================================== -->
+
     <script src="js/scripts.js"></script>
 
-    <center><button class="BackToTheTop" onclick="Return()">Return To Top!</button></center>
+
+    <!-- =====================================================
+         PAGE JAVASCRIPT
+    ====================================================== -->
+
     <script>
-        function Return() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+
+            /* =================================================
+               COPYRIGHT YEAR
+            ================================================== */
+
+            const currentYear =
+                document.getElementById("currentYear");
+
+
+            if (currentYear) {
+
+                currentYear.textContent =
+                    new Date().getFullYear();
+
+            }
+
+
+            /* =================================================
+               BACK TO TOP
+            ================================================== */
+
+            const backToTop =
+                document.getElementById("backToTop");
+
+
+            if (backToTop) {
+
+
+                function updateBackToTop() {
+
+                    if (window.scrollY > 300) {
+
+                        backToTop.style.display = "flex";
+
+                    } else {
+
+                        backToTop.style.display = "none";
+
+                    }
+
+                }
+
+
+                window.addEventListener(
+                    "scroll",
+                    updateBackToTop,
+                    { passive: true }
+                );
+
+
+                backToTop.addEventListener(
+                    "click",
+                    function () {
+
+                        window.scrollTo({
+
+                            top: 0,
+
+                            behavior: "smooth"
+
+                        });
+
+                    }
+                );
+
+
+                updateBackToTop();
+
+            }
+
+        });
+
     </script>
 
-</body>
+
 </body>
 
 </html>
+```
