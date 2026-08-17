@@ -69,30 +69,55 @@
 
         /* =====================================================
            WEBSITE HEADER
-           BG IMAGE: assets/img/bg.jpg
+           ENTIRE bg.jpg FITS HEADER AREA
         ====================================================== */
 
         .dss-header {
 
             position: relative;
 
+            width: 100%;
+
+            min-height: 190px;
+
             padding: 38px 20px 42px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
 
             text-align: center;
 
             overflow: hidden;
 
-            background:
-                linear-gradient(135deg,
-                    rgba(7, 26, 45, 0.90),
-                    rgba(92, 0, 24, 0.78)),
-                url("assets/img/bg.jpg") center center / cover no-repeat;
+            /*
+             * IMPORTANT:
+             * 100% 100% forces the COMPLETE bg.jpg image
+             * to fit the entire header area.
+             *
+             * Unlike "cover", this prevents the image
+             * from being cropped.
+             */
+
+            background-color: #071a2d;
+
+            background-image: url("assets/img/bg.jpg");
+
+            background-position: center center;
+
+            background-size: 100% 100%;
+
+            background-repeat: no-repeat;
 
             color: #ffffff;
         }
 
 
-        /* Header image overlay */
+        /* =====================================================
+           HEADER OVERLAY
+        ====================================================== */
 
         .dss-header::before {
 
@@ -104,9 +129,9 @@
 
             background:
                 linear-gradient(90deg,
-                    rgba(3, 19, 33, 0.78) 0%,
-                    rgba(7, 26, 45, 0.55) 50%,
-                    rgba(92, 0, 24, 0.68) 100%);
+                    rgba(3, 19, 33, 0.62) 0%,
+                    rgba(7, 26, 45, 0.40) 50%,
+                    rgba(92, 0, 24, 0.56) 100%);
 
             z-index: 0;
 
@@ -114,7 +139,9 @@
         }
 
 
-        /* Decorative circle */
+        /* =====================================================
+           DECORATIVE CIRCLE
+        ====================================================== */
 
         .dss-header::after {
 
@@ -128,8 +155,7 @@
 
             border-radius: 50%;
 
-            border:
-                1px solid rgba(255, 255, 255, 0.14);
+            border: 1px solid rgba(255, 255, 255, 0.14);
 
             right: -180px;
 
@@ -141,11 +167,17 @@
         }
 
 
+        /* =====================================================
+           HEADER CONTENT
+        ====================================================== */
+
         .header-content {
 
             position: relative;
 
             z-index: 2;
+
+            width: 100%;
 
             max-width: 1200px;
 
@@ -949,7 +981,7 @@
 
         /* =====================================================
            CHAMBER OF COMMERCE
-           COMPACT 60% REDUCED VERSION
+           COMPACT VERSION
         ====================================================== */
 
         .chamber-section {
@@ -1158,7 +1190,11 @@
 
             .dss-header {
 
+                min-height: 175px;
+
                 padding: 32px 20px 36px;
+
+                background-size: 100% 100%;
             }
 
 
@@ -1297,7 +1333,16 @@
 
             .dss-header {
 
+                min-height: 160px;
+
                 padding: 28px 15px 32px;
+
+                /*
+                 * Keeps the entire bg.jpg visible
+                 * within the smaller mobile header.
+                 */
+
+                background-size: 100% 100%;
             }
 
 
@@ -1563,7 +1608,7 @@
 
     <!-- =====================================================
          WEBSITE HEADER
-         BACKGROUND IMAGE: assets/img/bg.jpg
+         COMPLETE BACKGROUND IMAGE: assets/img/bg.jpg
     ====================================================== -->
 
     <header class="dss-header">
@@ -1618,9 +1663,7 @@
                     <li class="nav-item">
 
                         <a class="nav-link active" href="index.html">
-
                             HOME
-
                         </a>
 
                     </li>
@@ -1629,9 +1672,7 @@
                     <li class="nav-item">
 
                         <a class="nav-link" href="about.html">
-
                             ABOUT
-
                         </a>
 
                     </li>
@@ -1640,9 +1681,7 @@
                     <li class="nav-item">
 
                         <a class="nav-link" href="products.html">
-
                             SERVICES
-
                         </a>
 
                     </li>
@@ -1651,9 +1690,7 @@
                     <li class="nav-item">
 
                         <a class="nav-link" href="store.html">
-
                             CONTACT
-
                         </a>
 
                     </li>
@@ -1756,9 +1793,7 @@
                         <div class="hero-feature">
 
                             <div class="hero-feature-icon">
-
                                 <i class="bi bi-shield-check"></i>
-
                             </div>
 
                             <h5>
@@ -1779,9 +1814,7 @@
                         <div class="hero-feature">
 
                             <div class="hero-feature-icon">
-
                                 <i class="bi bi-lightbulb"></i>
-
                             </div>
 
                             <h5>
@@ -1802,9 +1835,7 @@
                         <div class="hero-feature">
 
                             <div class="hero-feature-icon">
-
                                 <i class="bi bi-headset"></i>
-
                             </div>
 
                             <h5>
@@ -1825,9 +1856,7 @@
                         <div class="hero-feature">
 
                             <div class="hero-feature-icon">
-
                                 <i class="bi bi-people"></i>
-
                             </div>
 
                             <h5>
@@ -2326,9 +2355,8 @@
 
                 <div class="copyright">
 
-                    2025 Copyright &copy;
-
-                    <span id=""></span>
+                    <span id="currentYear"></span>
+                    Copyright &copy;
 
                     Data Safe Systems LLC.
 
@@ -2381,14 +2409,16 @@
 
     <script>
 
-        /* =====================================================
-           COPYRIGHT YEAR
-        ====================================================== */
-
         document.addEventListener("DOMContentLoaded", function () {
+
+
+            /* =================================================
+               COPYRIGHT YEAR
+            ================================================== */
 
             const currentYear =
                 document.getElementById("currentYear");
+
 
             if (currentYear) {
 
@@ -2407,6 +2437,7 @@
 
 
             if (backToTop) {
+
 
                 function updateBackToTop() {
 
@@ -2454,7 +2485,7 @@
 
     </script>
 
+
 </body>
 
 </html>
-```
