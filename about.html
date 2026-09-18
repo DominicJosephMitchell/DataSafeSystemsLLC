@@ -540,6 +540,60 @@
                 0 15px 35px rgba(0, 0, 0, 0.12);
         }
 
+        ```css
+        /* =====================================================
+   BIO IMAGE
+   SHOW COMPLETE IMAGE - NO CROPPING
+===================================================== */
+
+        .bio-image-section {
+            width: 100%;
+            padding: 40px 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .bio-image-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bio-image {
+            display: block;
+            width: 100%;
+            max-width: 1400px;
+            height: auto !important;
+            max-height: none !important;
+            object-fit: contain !important;
+            object-position: center center !important;
+            margin: 0 auto;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .bio-image-section {
+                padding: 25px 15px;
+            }
+
+            .bio-image-container {
+                width: 100%;
+            }
+
+            .bio-image {
+                width: 100%;
+                max-width: 100%;
+                height: auto !important;
+                max-height: none !important;
+                object-fit: contain !important;
+            }
+        }
 
         .section-kicker {
 
@@ -1476,6 +1530,51 @@
                 width: 160px;
             }
         }
+
+        /* =====================================================
+   BIO IMAGE
+   Full image visible and centered
+====================================================== */
+
+        .bio-image-section {
+            width: 100%;
+            padding: 35px 20px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .bio-image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .bio-image {
+            display: block;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin: 0 auto;
+            border-radius: 12px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .bio-image-section {
+                padding: 25px 15px;
+            }
+
+            .bio-image {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+        }
     </style>
 
 </head>
@@ -1851,6 +1950,22 @@
 
     </section>
 
+    <!-- =====================================================
+     BIO IMAGE
+     FULL IMAGE VISIBLE - NO CROPPING
+    ===================================================== -->
+
+    <section class="bio-image-section">
+
+        <div class="bio-image-container">
+
+            <img src="./assets/img/DataSafeSystems_Bio.png" class="bio-image"
+                alt="Data Safe Systems / DataWorks IT services" loading="lazy">
+
+        </div>
+
+    </section>
+
 
     <!-- =====================================================
          CHAMBER OF COMMERCE
@@ -1906,134 +2021,134 @@
     <!-- =====================================================
              FOOTER
         ====================================================== -->
-    
+
     <footer class="footer">
-    
+
         <div class="container">
-    
+
             <div class="row g-5">
-    
-    
+
+
                 <div class="col-lg-5">
-    
+
                     <img src="./assets/img/DSSLLC DataWorks.PNG" class="footer-logo" alt="Data Safe Systems / DataWorks"
                         loading="lazy">
-    
+
                     <p>
-    
+
                         Providing innovative IT solutions with a
                         commitment to security, reliability,
                         and exceptional customer service.
-    
+
                     </p>
-    
+
                 </div>
-    
-    
+
+
                 <div class="col-sm-6 col-lg-3">
-    
+
                     <h5>
                         Quick Links
                     </h5>
-    
+
                     <ul class="footer-links">
-    
+
                         <li>
                             <a href="index.html">Home</a>
                         </li>
-    
+
                         <li>
                             <a href="about.html">About Us</a>
                         </li>
-    
+
                         <li>
                             <a href="products.html">Services</a>
                         </li>
-    
+
                         <li>
                             <a href="store.html">Contact Us</a>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
-    
-    
+
+
                 <div class="col-sm-6 col-lg-4">
-    
+
                     <h5>
                         Our Services
                     </h5>
-    
+
                     <ul class="footer-links">
-    
+
                         <li>
                             <a href="products.html">
                                 Network Security
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="products.html">
                                 IT Support & Helpdesk
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="products.html">
                                 Cloud Solutions
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="products.html">
                                 Data Backup & Recovery
                             </a>
                         </li>
-    
+
                         <li>
                             <a href="products.html">
                                 IT Consulting
                             </a>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
-    
+
             </div>
-    
-    
+
+
             <div class="footer-divider"></div>
-    
-    
+
+
             <div class="d-flex flex-column flex-md-row
                             justify-content-between
                             align-items-center
                             gap-3">
-    
+
                 <div class="copyright">
-    
+
                     <span id=""></span>
                     2025 Copyright &copy;
-    
+
                     Data Safe Systems / DataWorks
-    
+
                     All Rights Reserved.
-    
+
                 </div>
-    
-    
+
+
                 <div class="copyright">
-    
+
                     One Stop For All Your IT Needs
-    
+
                 </div>
-    
+
             </div>
-    
+
         </div>
-    
+
     </footer>
 
     <!-- =====================================================
