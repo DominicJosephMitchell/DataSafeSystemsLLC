@@ -432,10 +432,30 @@
 
 
         /* =====================================================
-           SERVICES HERO
+           SERVICES / FAMILY HERO
         ====================================================== */
 
         .services-hero {
+
+            position: relative;
+
+            min-height: 500px;
+
+            display: flex;
+
+            align-items: center;
+
+            overflow: hidden;
+
+            background:
+                linear-gradient(90deg,
+                    rgba(5, 20, 35, 0.95) 0%,
+                    rgba(5, 20, 35, 0.84) 45%,
+                    rgba(5, 20, 35, 0.48) 100%),
+                url("assets/img/products-01.jpg") center center / cover no-repeat;
+        }
+
+        .familyservices-hero {
 
             position: relative;
 
@@ -465,6 +485,14 @@
             color: #ffffff;
         }
 
+        .familyservices-hero-content {
+
+            max-width: 800px;
+
+            padding: 80px 0;
+
+            color: #ffffff;
+        }
 
         .services-kicker {
 
@@ -481,6 +509,20 @@
             margin-bottom: 15px;
         }
 
+        .familyservices-kicker {
+
+            color: #d9a1af;
+
+            font-size: 15px;
+
+            font-weight: 800;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 15px;
+        }
 
         .services-hero-title {
 
@@ -493,12 +535,26 @@
             margin-bottom: 25px;
         }
 
+        .familyservies-hero-title {
+
+            font-size: 56px;
+
+            line-height: 1.08;
+
+            font-weight: 900;
+
+            margin-bottom: 25px;
+        }
 
         .services-hero-title span {
 
             color: var(--burgundy-light);
         }
 
+        .familyservices-hero-title span {
+
+            color: var(--burgundy-light);
+        }
 
         .services-hero-text {
 
@@ -513,9 +569,21 @@
             margin-bottom: 0;
         }
 
+        .familyservices-hero-text {
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            color: rgba(255, 255, 255, 0.90);
+
+            max-width: 700px;
+
+            margin-bottom: 0;
+        }
 
         /* =====================================================
-           SERVICES SECTIONS
+           SERVICES / FAMILY SECTIONS
         ====================================================== */
 
         .service-section {
@@ -525,12 +593,22 @@
             background: #ffffff;
         }
 
+        .familyservice-section {
+
+            padding: 90px 0;
+
+            background: #ffffff;
+        }
 
         .service-section:nth-of-type(even) {
 
             background: var(--light-bg);
         }
 
+        .familyservice-section:nth-of-type(even) {
+
+            background: var(--light-bg);
+        }
 
         .service-image {
 
@@ -546,12 +624,29 @@
                 0 15px 35px rgba(0, 0, 0, 0.12);
         }
 
+        .familyservice-image {
+
+            width: 100%;
+
+            height: 430px;
+
+            object-fit: cover;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, 0.12);
+        }
 
         .service-content {
 
             padding: 20px 0;
         }
 
+        .familyservice-content {
+
+            padding: 20px 0;
+        }
 
         .section-kicker {
 
@@ -568,6 +663,20 @@
             margin-bottom: 10px;
         }
 
+        .familysection-kicker {
+
+            color: var(--burgundy);
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
 
         .section-title {
 
@@ -582,12 +691,28 @@
             margin-bottom: 22px;
         }
 
+        .familysection-title {
+
+            color: var(--navy);
+
+            font-size: 42px;
+
+            line-height: 1.15;
+
+            font-weight: 900;
+
+            margin-bottom: 22px;
+        }
 
         .section-title span {
 
             color: var(--burgundy);
         }
 
+        .familysection-title span {
+
+            color: var(--burgundy);
+        }
 
         .section-text {
 
@@ -600,12 +725,50 @@
             margin-bottom: 20px;
         }
 
+        .familysection-text {
+
+            color: var(--text-gray);
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            margin-bottom: 20px;
+        }
 
         /* =====================================================
            SERVICE NUMBER
         ====================================================== */
 
         .service-number {
+
+            width: 58px;
+
+            height: 58px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: var(--burgundy);
+
+            color: #ffffff;
+
+            font-size: 22px;
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+
+            box-shadow:
+                0 8px 20px rgba(92, 0, 24, 0.20);
+        }
+
+        .familyservice-number {
 
             width: 58px;
 
@@ -654,8 +817,33 @@
                 0 5px 20px rgba(0, 0, 0, 0.06);
         }
 
+        .familyservice-highlight {
+
+            background: #ffffff;
+
+            border-left: 5px solid var(--burgundy);
+
+            border-radius: 8px;
+
+            padding: 20px 25px;
+
+            margin-top: 25px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
 
         .service-highlight p {
+
+            color: var(--text-gray);
+
+            line-height: 1.7;
+
+            margin: 0;
+        }
+
+        .familyservice-highlight p {
 
             color: var(--text-gray);
 
@@ -678,6 +866,15 @@
             margin: 25px 0;
         }
 
+        .familyservice-list {
+
+            list-style: none;
+
+            padding: 0;
+
+            margin: 25px 0;
+        }
+
 
         .service-list li {
 
@@ -688,8 +885,24 @@
             margin-bottom: 13px;
         }
 
+        .familyservice-list li {
+
+            color: #26364a;
+
+            font-weight: 600;
+
+            margin-bottom: 13px;
+        }
+
 
         .service-list i {
+
+            color: var(--burgundy);
+
+            margin-right: 10px;
+        }
+
+        .familyservice-list i {
 
             color: var(--burgundy);
 
@@ -1105,8 +1318,18 @@
                 min-height: 450px;
             }
 
+            .familyservices-hero {
+
+                min-height: 450px;
+            }
+
 
             .services-hero-content {
+
+                padding: 70px 20px;
+            }
+
+            .familyservices-hero-content {
 
                 padding: 70px 20px;
             }
@@ -1117,14 +1340,31 @@
                 font-size: 48px;
             }
 
+            .familyservices-hero-title {
+
+                font-size: 48px;
+            }
+
 
             .service-section {
 
                 padding: 70px 0;
             }
 
+            .familyservice-section {
+
+                padding: 70px 0;
+            }
+
 
             .service-image {
+
+                height: 350px;
+
+                margin-bottom: 20px;
+            }
+
+            .familyservice-image {
 
                 height: 350px;
 
@@ -1257,8 +1497,18 @@
                 min-height: 500px;
             }
 
+            .familyservices-hero {
+
+                min-height: 500px;
+            }
+
 
             .services-hero-content {
+
+                padding: 60px 20px;
+            }
+
+            .familyservices-hero-content {
 
                 padding: 60px 20px;
             }
@@ -1269,8 +1519,18 @@
                 font-size: 39px;
             }
 
+            .familyservices-hero-title {
+
+                font-size: 39px;
+            }
+
 
             .services-hero-text {
+
+                font-size: 16px;
+            }
+
+            .familyservices-hero-text {
 
                 font-size: 16px;
             }
@@ -1281,14 +1541,29 @@
                 padding: 60px 0;
             }
 
+            .familyservice-section {
+
+                padding: 60px 0;
+            }
+
 
             .service-image {
 
                 height: 280px;
             }
 
+            .familyservice-image {
+
+                height: 280px;
+            }
+
 
             .section-title {
+
+                font-size: 34px;
+            }
+
+            .familysection-title {
 
                 font-size: 34px;
             }
@@ -1586,13 +1861,13 @@
                     </li>
 
                     <li class="nav-item">
-                    
+
                         <a class="nav-link" href="residential.html">
-                    
+
                             RESIDENTIAL
-                    
+
                         </a>
-                    
+
                     </li>
 
                     <li class="nav-item">
@@ -1620,19 +1895,19 @@
          SERVICES HERO
     ====================================================== -->
 
-    <section class="services-hero">
+    <section class="familyservices-hero">
 
         <div class="container">
 
-            <div class="services-hero-content">
+            <div class="familyservices-hero-content">
 
 
-                <div class="services-kicker">
+                <div class="familyservices-kicker">
                     Computer Repairs - Training - Sales
                 </div>
 
 
-                <h1 class="services-hero-title">
+                <h1 class="familyservices-hero-title">
 
                     Protecting Your Home - Family - Future.
 
@@ -1644,9 +1919,9 @@
                 </h1>
 
 
-                <p class="services-hero-text">
+                <p class="familyservices-hero-text">
 
-                    Get more from the technology in your home with trusted, 
+                    Get more from the technology in your home with trusted,
                     friendly IT support—without the tech talk. From computers and
                     Wi-Fi to all your connected devices, we provide fast, reliable
                     help to keep everything running smoothly. We help protect
@@ -1663,11 +1938,11 @@
 
 
     <!-- =====================================================
-         SERVICE 1
+         FAMILYSERVICE 1
          NETWORK SOLUTIONS
     ====================================================== -->
 
-    <section class="service-section">
+    <section class="familyservice-section">
 
         <div class="container">
 
@@ -1676,28 +1951,27 @@
 
                 <div class="col-lg-6">
 
-                    <img src="./assets/img/family.png" class="Family"
-                        alt="Happy Family" loading="lazy">
+                    <img src="./assets/img/family.png" class="Familyservice image" alt="Happy Family" loading="lazy">
 
                 </div>
 
 
                 <div class="col-lg-6">
 
-                    <div class="service-content">
+                    <div class="familyservice-content">
 
 
-                        <div class="service-number">
+                        <div class="familyservice-number">
                             01
                         </div>
 
 
-                        <div class="section-kicker">
+                        <div class="familyservice-kicker">
                             Tech Solutions, Redefined
                         </div>
 
 
-                        <h2 class="section-title">
+                        <h2 class="familysection-title">
 
                             Delivering <span>Tomorrow's Tech</span>,
                             Today
@@ -1705,7 +1979,7 @@
                         </h2>
 
 
-                        <p class="section-text">
+                        <p class="familysection-text">
 
                             A company's network serves as the vital
                             core of the business and it is the very
@@ -1714,7 +1988,7 @@
                         </p>
 
 
-                        <p class="section-text">
+                        <p class="familysection-text">
 
                             A partner who fully comprehends the
                             significance of the building and
@@ -1725,7 +1999,7 @@
                         </p>
 
 
-                        <div class="service-highlight">
+                        <div class="familyservice-highlight">
 
                             <p>
 
