@@ -981,7 +981,7 @@
 
         /* =====================================================
            CHAMBER OF COMMERCE
-           COMPACT VERSION
+           SAME COMPACT STYLE AS SCRIPT 1
         ====================================================== */
 
         .chamber-section {
@@ -1492,13 +1492,13 @@
 
             .chamber-section {
 
-                padding: 7px 8px !important;
+                padding: 8px 0 !important;
             }
 
 
             .chamber-logo {
 
-                width: 105px !important;
+                width: 115px !important;
 
                 margin-bottom: 2px !important;
             }
@@ -1506,10 +1506,12 @@
 
             .chamber-section p {
 
-                font-size: 10px;
+                font-size: 11px;
 
                 line-height: 1.15;
             }
+
+        }
 
 
             #backToTop {
@@ -1519,7 +1521,6 @@
                 bottom: 15px;
             }
 
-        }
 
 
         /* =====================================================
@@ -1598,6 +1599,69 @@
             }
 
         }
+
+        /* Chamber Section */
+        .chamber-section {
+            width: 100%;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        /* Keep the two Chamber sections side-by-side */
+        .chamber-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        /* Individual Chamber */
+        .chamber-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 300px;
+        }
+
+        /* Chamber Logos */
+        .chamber-logo {
+            width: 180px;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        /* Text underneath logo */
+        .chamber-item p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            .chamber-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+            }
+
+            .chamber-item {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .chamber-logo {
+                width: 160px;
+            }
+        }
+
+
     </style>
 
 </head>
@@ -2235,22 +2299,53 @@
 
 
     <!-- =====================================================
-         CHAMBER OF COMMERCE
-    ====================================================== -->
-
+             CHAMBER OF COMMERCE
+        ====================================================== -->
+    
     <section class="chamber-section">
-
-        <div class="container">
-
-            <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce"
-                loading="lazy">
-
-            <p>
-                Proud member of the Greater East Pasco Chamber of Commerce
-            </p>
-
+    
+        <div class="container chamber-container">
+    
+            <!-- Greater East Pasco Chamber -->
+            <div class="chamber-item">
+    
+                <img src="./assets/img/EPChamber.jpg" class="chamber-logo" alt="Greater East Pasco Chamber of Commerce"
+                    loading="lazy">
+    
+                <p>
+                    Proud member of the Greater East Pasco Chamber of Commerce
+                </p>
+    
+            </div>
+    
+    
+            <!-- Northern RI Chamber -->
+            <div class="chamber-item">
+    
+                <img src="./assets/img/NRICC.PNG" class="chamber-logo" alt="Northern RI Chamber of Commerce" loading="lazy">
+    
+                <p>
+                    Proud member of the Northern RI Chamber of Commerce
+                </p>
+    
+            </div>
+    
+            <!-- Southern RI Chamber -->
+    
+            <div class="chamber-item">
+    
+                <img src="./assets/img/SRICC1.PNG" class="chamber-logo" alt="Southern RI Chamber of Commerce"
+                    loading="lazy">
+    
+                <p>
+                    Proud member of the Southern RI Chamber of Commerce
+                </p>
+    
+            </div>
+    
+    
         </div>
-
+    
     </section>
 
 
